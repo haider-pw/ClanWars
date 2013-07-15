@@ -19,4 +19,24 @@ parent::__construct();
         $this->load->view('login_page');
     }
 
+    function login_user()
+    {
+        $user=$_POST['UserName'];
+        $password=$_POST['UserPass'];
+        $user_data=array
+        ("UserName" => $user,
+        "Password"=> $password);
+        $this->load->model('my_model');
+        $result=$this->my_model->login($user_data);
+        if($result==true)
+        {
+            echo "sucessful";
+        }
+        else
+        {
+            echo "fail";
+        }
+
+    }
+
 }
