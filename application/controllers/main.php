@@ -28,6 +28,7 @@ parent::__construct();
         "Password"=> $password);
         $this->load->model('my_model');
         $result=$this->my_model->login($user_data);
+        print_r($result);
         if($result==true)
         {
             echo "sucessful";
