@@ -67,13 +67,13 @@ class MY_Model extends CI_Model {
 
 
     public function login($Where){
-        $UserTable = 'pbs_users';
+        $UserTable = 'cw_user';
         $user = $this->get($UserTable,$Where,TRUE);
         if(count($user)){
             //Log the User in if User Record is Returned
             $data=array(
-                'FullName' => $user['FullName'],
-                'email' => $user['Email'],
+                'UserName' => $user['UserName'],
+                'Email' => $user['Email'],
                 'UserID' => $user['UserID'],
                 'LoggedIn' => TRUE
             );

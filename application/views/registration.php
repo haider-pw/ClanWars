@@ -104,7 +104,7 @@
 
                 <div class="field">
                     <div class="gender">
-                        Male:<input type="radio" name="gender" value="Male" id="gender"/>
+                        Male:<input type="radio" name="gender" value="Male" checked id="gender"/>
                         Female:<input type="radio" name="gender" value="Female"/>
                     </div>
                 </div>
