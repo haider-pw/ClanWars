@@ -41,8 +41,8 @@
 
     <div class="account-wrapper">
         <ul id="user-account-nav">
-            <li><a href="main/login">Login</a></li>
-            <li><a href="http://xhtml.webtemplatemasters.com/">Create an account</a></li>
+            <li><a href="<?php echo base_url('index.php/main/login');?>">Login</a></li>
+            <li><a href="<?php echo base_url('index.php/main/validation_form');?>">Create an account</a></li>
         </ul><!--/ #user-account-nav-->
     </div><!--/ .account-wrapper-->
 
