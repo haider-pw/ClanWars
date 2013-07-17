@@ -20,7 +20,7 @@
     <![endif]-->
 
 </head>
-<body class="background-1 h-style-1 text-1 skin-1">
+<body class="h-style-1 text-1 skin-1 background-7">
 
 
 
