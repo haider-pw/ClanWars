@@ -16,11 +16,30 @@ parent::__construct();
 
 
 
+    function login_user()
+    {
+        $user=$_POST['UserName'];
+        $password=$_POST['Password'];
+        $user_data=array
+        ('UserName'=>$user,
+        'Password'=> $password);
+        $result=$this->Common_Model->login($user_data);
+        if($result==true)
+        {
+            $this->load->view('main');
+        }
+        else
+        {
+            echo 'login fail';
+        }
+
+
 
     function validation_form()
     {
         $this->load->view('registration');
     }
+
     function validation()
     {
         $errors = array();
@@ -83,9 +102,18 @@ parent::__construct();
             }
 
             // JSON success response. Returns the redirect URL:
-            echo '{"status":1,"redirectURL":"}';
+            $table='cw_user';
+            $data = array(
+                'UserName' => $_POST['name'],
+                'InGameName' => $_POST['game_name'],
+                'Age' => $_POST['age'],
+                'Cnic' => $_POST['cnic'],
+                'Email' => $_POST['email'],
+                'Password' => $_POST['pass'],
+                'Gender' => $_POST['gender']
 
-            exit;
+            );
+            $this->CommonModel->insert($table,$data);
         }
 
 // If the request was not sent via AJAX (probably JavaScript
@@ -112,4 +140,5 @@ parent::__construct();
     }
 
 
+}
 }
