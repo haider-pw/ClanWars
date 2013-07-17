@@ -6,15 +6,27 @@
     <title>Clan Wars | User Registration</title>
 
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('styles/register/styles.css');?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('styles/custom-notifications.css');?>" />
+    <script type="text/javascript" src="<?php echo base_url('scripts/jQuery1.7.1.js'); ?>"></script>
 
 </head>
 
 <body>
+<div id="error_message">
+    Error Occurred.
+</div><!-- end of error_message -->
 
+<div id="warning_message">
+    Warning!. Make sure you perform the correct action.
+</div><!-- End of warning_message -->
+
+<div id="notification_message">
+    The Action has been completed Successfully.
+</div><!-- End of notification_message -->
 <div id="carbonForm">
     <h1>Signup</h1>
 
-    <form action="<?php echo base_url('index.php/users/registration'); ?>" method="post">
+    <?php echo form_open_multipart('users/register_user',array('id' => 'register_user','name' => 'register_user')); ?>
 
         <div class="fieldContainer">
 
@@ -24,7 +36,7 @@
                 </div>
 
                 <div class="field">
-                    <input type="text" name="name" id="name" />
+                    <input type="text" name="UserName" id="UserName" />
                 </div>
             </div>
 
@@ -84,16 +96,16 @@
                 </div>
 
                 <div class="field">
-                    <input type="password" name="pass" id="pass" />
+                    <input type="password" name="password" id="password" />
                 </div>
             </div>
             <div class="formRow">
                 <div class="label">
-                    <label for="re_pass">Re-Enter Password:</label>
+                    <label for="ConfirmPassword">Re-Enter Password:</label>
                 </div>
 
                 <div class="field">
-                    <input type="password" name="re_pass" id="re_pass" />
+                    <input type="password" name="ConfirmPassword" id="ConfirmPassword" />
                 </div>
             </div>
 
@@ -116,14 +128,64 @@
         </div> <!-- Closing fieldContainer -->
 
         <div class="signupButton">
-            <input type="submit" name="submit" id="submit" value="Signup" />
+            <input type="button" name="submit" id="submitBtn" value="Signup" />
         </div>
 
-    </form>
+    <?php echo form_close(); ?>
 
 </div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#submitBtn").click(function() {
+            submit_form();
+        });
+    });
+    function  submit_form(){
 
-<script type="text/javascript" src="<?php echo base_url('scripts/Registerscript.js');?>"></script>
+        var user_n = $("#UserName").val().length;
+        var user = $("#UserName").val();
+        if(user == '')
+        {
+            alert('Username is empty');
+            //fading_msg("error_message","Username is empty");
+            return;
+        }
+        if(user_n>0 && user_n<5)
+        {
+            alert('Username must be atleast 5 characters long');
+            //fading_msg("error_message","Username must be atleast 5 characters long");
+            return;
+        }
+
+        var pw = $("#Password").val();
+        var c_pw = $("#ConfirmPassword").val();
+
+        if( pw!=c_pw || (pw.length<5 && pw.length>0))
+        {
+            alert('Password must be matched and Password must be atleast 5 characters long');
+            //fading_msg("error_message","Password must be matched and Password must be atleast 5 characters long");
+            return;
+        }
+
+        $("#insert_user").ajaxSubmit({
+            success: function(response){
+                var data = response.split(":::")
+                if(data[0] == 'error')
+                {
+                    //fading_msg("error_message",data[1]);
+                }else{
+                    window.location.href = "<?php base_url('main/index'); ?>";
+                    //fading_msg("notification_message","New User is Created Successfully");
+                }
+            },
+            error:function(xhr,error_status,error_thrown){
+                //fading_msg("error_message",error_thrown);
+                alert(error_thrown);
+            }
+
+        });
+    } //---  End of submit_form  ---//
+</script>
 
 </body>
 </html>
