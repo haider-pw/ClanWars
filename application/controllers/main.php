@@ -33,7 +33,7 @@ parent::__construct();
             echo 'login fail';
         }
 
-
+    }
 
     function validation_form()
     {
@@ -139,6 +139,4 @@ parent::__construct();
 
     }
 
-
-}
 }
