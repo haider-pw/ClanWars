@@ -39,7 +39,7 @@ class MY_Model extends CI_Model {
 
     function insert($table,$data) {
         $this->db->insert($table,$data);
-        $InsertedID=$this->db->insert_id();
+        //$InsertedID=$this->db->insert_id();
         $affected_rows=$this->db->affected_rows();
         if($affected_rows>0){
             return $InsertedID;

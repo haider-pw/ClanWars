@@ -14,8 +14,6 @@ parent::__construct();
         $this->load->view('main');
     }
 
-
-
     function login_user()
     {
         $user=$_POST['UserName'];
@@ -113,9 +111,8 @@ parent::__construct();
                 'Gender' => $_POST['gender']
 
             );
-            $this->CommonModel->insert($table,$data);
+            $this->Common_Model->insert($table,$data);
         }
-
 // If the request was not sent via AJAX (probably JavaScript
 // has been disabled in the visitors' browser):
 
