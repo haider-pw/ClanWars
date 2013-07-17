@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('styles/register/styles.css');?>" />
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('styles/custom-notifications.css');?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('styles/messages.css');?>" />
     <script type="text/javascript" src="<?php echo base_url('scripts/jQuery1.7.1.js'); ?>"></script>
 
 </head>
@@ -146,14 +147,14 @@
         var user = $("#UserName").val();
         if(user == '')
         {
-            alert('Username is empty');
-            //fading_msg("error_message","Username is empty");
+            //alert('Username is empty');
+            fading_msg("error_message","Username is empty");
             return;
         }
         if(user_n>0 && user_n<5)
         {
-            alert('Username must be atleast 5 characters long');
-            //fading_msg("error_message","Username must be atleast 5 characters long");
+            //alert('Username must be atleast 5 characters long');
+            fading_msg("error_message","Username must be atleast 5 characters long");
             return;
         }
 
@@ -185,6 +186,17 @@
 
         });
     } //---  End of submit_form  ---//
+
+    //---  Function for fading in popup messages  ---//
+    function fading_msg(popup_id,msg){
+        var popup = "#"+popup_id;
+        $(popup).html(msg);
+        $(popup).fadeIn('slow');
+
+        setTimeout(function(){
+            $(popup).fadeOut('slow');
+        },2000);
+    }//---  End of fading_msg  ---//
 </script>
 
 </body>
