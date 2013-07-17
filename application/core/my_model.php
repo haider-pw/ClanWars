@@ -15,10 +15,13 @@ class MY_Model extends CI_Model {
     function get($table,$where=array(),$single=FALSE) {
         $q = $this->db->get_where($table,$where);
         $result = $q->result_array();
-        if($single) {
+
+        if($single && $result!=null) {
             return $result[0];
         }
-        return $result;
+        else{
+            return $result;
+        }
     }
 
     function get_by($columns, $table, $where=array(), $single=FALSE ){

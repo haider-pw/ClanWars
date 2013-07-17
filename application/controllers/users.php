@@ -2,7 +2,7 @@
 
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class User_Management extends MY_Controller {
+class Users extends MY_Controller {
     public function __construct(){
         parent::__construct();
     }
@@ -25,17 +25,16 @@ class User_Management extends MY_Controller {
         $result=$this->Common_Model->login($user_data);
         if($result==true)
         {
-            //To Show all the Sessions Data.
-            //print_r($this->session->userdata);
             $this->load->view('main');
         }
         else
         {
-            echo "fail";
+            echo "login fail";
         }
 
     }
     function logout(){
-        $this->common_model->logout();
+        $this->Common_Model->logout();
+        $this->load->view('main');
     }
 }
