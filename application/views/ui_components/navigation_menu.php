@@ -42,16 +42,16 @@
     <div class="account-wrapper">
         <ul id="user-account-nav">
 
-            <?php if(LoggedIn()){ ?>
+            <?php if (LoggedIn()) { ?>
+                <li><a href="<?php echo base_url('index.php/users/logout'); ?>">Logout</a></li>
 
-            <li><a href="<?php echo base_url('index.php/main/login');?>">Login</a></li>
-            <li><a href="<?php echo base_url('index.php/main/validation_form');?>">Create an account</a></li>
+            <?php } else { ?>
 
-   <?php } else { ?>
+                <li><a href="<?php echo base_url('index.php/main/login'); ?>">Login</a></li>
+                <li><a href="<?php echo base_url('index.php/main/validation_form'); ?>">Create an account</a></li>
 
-            <li><a href="<?php echo base_url('index.php/main/login');?>">Logout</a></li>
 
-           <?php }?>
+            <?php } ?>
 
         </ul><!--/ #user-account-nav-->
     </div><!--/ .account-wrapper-->

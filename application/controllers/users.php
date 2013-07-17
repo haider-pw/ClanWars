@@ -35,4 +35,7 @@ class User_Management extends MY_Controller {
         }
 
     }
+    function logout(){
+        $this->common_model->logout();
+    }
 }
