@@ -29,7 +29,7 @@ parent::__construct();
         $result=$this->Common_Model->login($user_data);
         if($result==true)
         {
-            echo "sucessful";
+            $this->load->view('main');
         }
         else
         {
