@@ -135,6 +135,7 @@
     <?php echo form_close(); ?>
 
 </div>
+<script type="text/javascript" src="<?php echo base_url('scripts/custom-functions.js'); ?>"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         $("#submitBtn").click(function() {
@@ -187,16 +188,6 @@
         });
     } //---  End of submit_form  ---//
 
-    //---  Function for fading in popup messages  ---//
-    function fading_msg(popup_id,msg){
-        var popup = "#"+popup_id;
-        $(popup).html(msg);
-        $(popup).fadeIn('slow');
-
-        setTimeout(function(){
-            $(popup).fadeOut('slow');
-        },2000);
-    }//---  End of fading_msg  ---//
 </script>
 
 </body>
