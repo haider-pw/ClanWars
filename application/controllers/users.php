@@ -15,11 +15,13 @@ class User_Management extends MY_Controller {
 
     function login_user()
     {
-        $user=$_POST['UserName'];
-        $password=$_POST['Password'];
-        $user_data=array
-        ('UserName'=>$user,
-            'Password'=> $password);
+        $user = $_POST['UserName'];
+        $password = $_POST['Password'];
+        $user_data = array
+        (
+            'UserName' => $user,
+            'Password' => $password
+        );
         $result=$this->Common_Model->login($user_data);
         if($result==true)
         {
