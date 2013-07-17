@@ -40,7 +40,23 @@ parent::__construct();
 
     function validation()
     {
+        $user=$_POST['name'];
+        $email=$_POST['email'];
+        $name_data=array
+        ('UserName'=>$user);
+        $email_data=array
+        ('Email'=>$email);
         $errors = array();
+
+        if($this->Common_Model->unique_name($name_data))
+        {
+            $errors['name']='This Name is already taken!<br />';
+        }
+
+        if($this->Common_Model->unique_email($email_data))
+        {
+            $errors['email']='This Email is already taken!<br />';
+        }
 
         if(!$_POST['name'] || strlen($_POST['name'])<3 || strlen($_POST['name'])>25)
         {
@@ -113,21 +129,6 @@ parent::__construct();
             );
             $this->Common_Model->insert($table,$data);
         }
-// If the request was not sent via AJAX (probably JavaScript
-// has been disabled in the visitors' browser):
-
-        if(count($errors))
-        {
-            echo '<h2>'.join('<br /><br />',$errors).'</h2>';
-            exit;
-        }
-        else{
-            $data = array(
-                'username' => $_POST['name']
-            );
-            $this->load->view('');
-        }
-        var_dump(count($errors));
 
 // Directly redirecting the visitor:
 

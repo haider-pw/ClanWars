@@ -39,14 +39,14 @@ class MY_Model extends CI_Model {
 
     function insert($table,$data) {
         $this->db->insert($table,$data);
-        //$InsertedID=$this->db->insert_id();
-        $affected_rows=$this->db->affected_rows();
-        if($affected_rows>0){
-            return $InsertedID;
-        }
-        else {
-            return 0;
-        }
+//        $InsertedID=$this->db->insert_id();
+//        $affected_rows=$this->db->affected_rows();
+//        if($affected_rows>0){
+//            return $InsertedID;
+//        }
+//        else {
+//            return 0;
+//        }
     }
 
     function update($table,$where=array(),$data) {
@@ -68,7 +68,23 @@ class MY_Model extends CI_Model {
         }
     }
 
+    public function unique_name($name)
+    {
+        $UserTable = 'cw_user';
+        $user = $this->get($UserTable,$name,TRUE);
+        if(count($user)){
 
+            return TRUE;
+        }
+    }
+    public function unique_email($email)
+    {
+        $UserTable = 'cw_user';
+        $user = $this->get($UserTable,$email,TRUE);
+        if(count($user)){
+            return TRUE;
+        }
+    }
     public function login($Where){
         $UserTable = 'cw_user';
         $user = $this->get($UserTable,$Where,TRUE);
