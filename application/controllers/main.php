@@ -14,29 +14,9 @@ parent::__construct();
         $this->load->view('main');
     }
 
-    function login()
-    {
-        $this->load->view('login_page');
-    }
 
-    function login_user()
-    {
-        $user=$_POST['UserName'];
-        $password=$_POST['Password'];
-        $user_data=array
-        ('UserName'=>$user,
-        'Password'=> $password);
-        $result=$this->Common_Model->login($user_data);
-        if($result==true)
-        {
-            $this->load->view('main');
-        }
-        else
-        {
-            echo "fail";
-        }
 
-    }
+
     function validation_form()
     {
         $this->load->view('registration');

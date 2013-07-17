@@ -12,3 +12,12 @@ if (!function_exists('checkIfLoggedIn'))
         }
     }
 }
+function LoggedIn(){
+    $ci =& get_instance();
+    if($ci->session->userdata('LoggedIn')){
+        return TRUE;
+    }
+    else{
+        return FALSE;
+    }
+}
