@@ -128,6 +128,7 @@ parent::__construct();
 
             );
             $this->Common_Model->insert($table,$data);
+            $this->load->view('main');
         }
 
 // Directly redirecting the visitor:
