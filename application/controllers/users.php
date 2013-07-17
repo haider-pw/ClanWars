@@ -37,4 +37,7 @@ class Users extends MY_Controller {
         $this->Common_Model->logout();
         $this->load->view('main');
     }
+    function register_user(){
+
+    }
 }

@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Carbon Fiber Signup Form | Tutorialzine Demo</title>
+    <title>Clan Wars | User Registration</title>
 
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('styles/register/styles.css');?>" />
 
@@ -14,7 +14,7 @@
 <div id="carbonForm">
     <h1>Signup</h1>
 
-    <form action="<?php echo base_url('index.php/main/validation'); ?>" method="post" id="signupForm">
+    <form action="<?php echo base_url('index.php/users/registration'); ?>" method="post">
 
         <div class="fieldContainer">
 
@@ -123,7 +123,6 @@
 
 </div>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url('scripts/Registerscript.js');?>"></script>
 
 </body>
