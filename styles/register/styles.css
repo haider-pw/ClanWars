@@ -151,16 +151,16 @@ input:focus{
 
 /* The styles below are only necessary for the styling of the demo page: */
 
-#footer{
-	position:fixed;
-	bottom:0;
-	width:100%;
-	padding:10px;
-	color:#eee;
-	text-align:center;
-	font-weight:normal;
-	font-style:italic;
-}
+/*#footer{*/
+	/*position:fixed;*/
+	/*bottom:0;*/
+	/*width:100%;*/
+	/*padding:10px;*/
+	/*color:#eee;*/
+	/*text-align:center;*/
+	/*font-weight:normal;*/
+	/*font-style:italic;*/
+/*}*/
 
 a, a:visited {
 	color:#0196e3;

@@ -5,11 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Clan Wars | User Registration</title>
 
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('styles/register/styles.css');?>" />
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('styles/custom-notifications.css');?>" />
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('styles/messages.css');?>" />
-    <script type="text/javascript" src="<?php echo base_url('scripts/jQuery1.7.1.js'); ?>"></script>
-    <script type="text/javascript" src="<?php echo base_url('scripts/jquery.form.js'); ?>"></script>
+
 
 </head>
 
@@ -126,7 +122,6 @@
     <?php echo form_close(); ?>
 
 </div>
-<script type="text/javascript" src="<?php echo base_url('scripts/custom-functions.js'); ?>"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         $("#submitBtn").click(function() {
@@ -220,7 +215,7 @@
                 {
                    fading_msg("error_message",data[1]);
                 }else{
-                    window.location.href = "<?php base_url('main/index'); ?>";
+                    window.location.href = "<?php base_url('index.php/main'); ?>";
                     fading_msg("notification_message","New User is Created Successfully");
                 }
             },

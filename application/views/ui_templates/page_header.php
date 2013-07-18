@@ -31,10 +31,15 @@
     <script src="<?php echo base_url('scripts/app.js'); ?>"></script>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <script src="<?php echo base_url('scripts/app.js'); ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('scripts/jquery.form.js'); ?>"></script>
     <script src="<?php echo base_url('scripts/angular_login.js'); ?>"></script>
     <link rel="stylesheet" href="<?php echo base_url('styles/login/css/base.css');?>">
     <link rel="stylesheet" href="<?php echo base_url('styles/login/css/skeleton.css');?>">
     <link rel="stylesheet" href="<?php echo base_url('styles/login/css/layout.css');?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('styles/register/styles.css');?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('styles/custom-notifications.css');?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('styles/messages.css');?>" />
+    <script type="text/javascript" src="<?php echo base_url('scripts/custom-functions.js'); ?>"></script>
 
 </head>
 <body class="h-style-1 text-1 skin-1 background-7">

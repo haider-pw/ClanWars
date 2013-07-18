@@ -4,6 +4,6 @@ angular.module('link',[],function($routeProvider, $locationProvider){
     });
 
     $routeProvider.when('/register', {
-        templateUrl:BASE_URL+'index.php/users/login'
+        templateUrl:BASE_URL+'index.php/main/validation_form'
     });
 });
