@@ -11,7 +11,7 @@
 /* #Base 960 Grid 
 ================================================== */
 
-	.container { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+	.login-container { position: relative; width: 960px; margin: 0 auto; padding: 0; }
 	.column, .columns { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
 	.row { margin-bottom: 20px; }
 	
@@ -20,42 +20,42 @@
 	.column.omega, .columns.omega 				{ margin-right: 0; }
 	
 	/* Base Grid */
-	.container .one.column 							{ width: 40px;  }
-	.container .two.columns 						{ width: 100px; }
-	.container .three.columns 					{ width: 160px; }
-	.container .four.columns 						{ width: 220px; }
-	.container .five.columns 						{ width: 280px; }
-	.container .six.columns 						{ width: 340px; }
-	.container .seven.columns 					{ width: 400px; }	
-	.container .eight.columns 					{ width: 460px; }
-	.container .nine.columns 						{ width: 520px; }
-	.container .ten.columns 						{ width: 580px; }	
-	.container .eleven.columns 					{ width: 640px; }	
-	.container .twelve.columns 					{ width: 700px; }
-	.container .thirteen.columns 				{ width: 760px; }	
-	.container .fourteen.columns 				{ width: 820px; }	
-	.container .fifteen.columns 				{ width: 880px; }
-	.container .sixteen.columns 				{ width: 940px; }
+	.login-container .one.column 							{ width: 40px;  }
+	.login-container .two.columns 						{ width: 100px; }
+	.login-container .three.columns 					{ width: 160px; }
+	.login-container .four.columns 						{ width: 220px; }
+	.login-container .five.columns 						{ width: 280px; }
+	.login-container .six.columns 						{ width: 340px; }
+	.login-container .seven.columns 					{ width: 400px; }	
+	.login-container .eight.columns 					{ width: 460px; }
+	.login-container .nine.columns 						{ width: 520px; }
+	.login-container .ten.columns 						{ width: 580px; }	
+	.login-container .eleven.columns 					{ width: 640px; }	
+	.login-container .twelve.columns 					{ width: 700px; }
+	.login-container .thirteen.columns 				{ width: 760px; }	
+	.login-container .fourteen.columns 				{ width: 820px; }	
+	.login-container .fifteen.columns 				{ width: 880px; }
+	.login-container .sixteen.columns 				{ width: 940px; }
 	
-	.container .one-third.column				{ width: 300px; }
-	.container .two-thirds.column				{ width: 620px; }
+	.login-container .one-third.column				{ width: 300px; }
+	.login-container .two-thirds.column				{ width: 620px; }
 	
 	/* Offsets */	
-	.container .offset-by-one 					{ padding-left: 60px;  }
-	.container .offset-by-two 					{ padding-left: 120px; }
-	.container .offset-by-three 				{ padding-left: 180px; }
-	.container .offset-by-four 					{ padding-left: 240px; }
-	.container .offset-by-five 					{ padding-left: 300px; }
-	.container .offset-by-six 					{ padding-left: 360px; }
-	.container .offset-by-seven 				{ padding-left: 420px; }
-	.container .offset-by-eight 				{ padding-left: 480px; }
-	.container .offset-by-nine 					{ padding-left: 540px; }
-	.container .offset-by-ten 					{ padding-left: 600px; }
-	.container .offset-by-eleven 				{ padding-left: 660px; }
-	.container .offset-by-twelve 				{ padding-left: 720px; }
-	.container .offset-by-thirteen 			{ padding-left: 780px; }
-	.container .offset-by-fourteen 			{ padding-left: 840px; }
-	.container .offset-by-fifteen 			{ padding-left: 900px; }
+	.login-container .offset-by-one 					{ padding-left: 60px;  }
+	.login-container .offset-by-two 					{ padding-left: 120px; }
+	.login-container .offset-by-three 				{ padding-left: 180px; }
+	.login-container .offset-by-four 					{ padding-left: 240px; }
+	.login-container .offset-by-five 					{ padding-left: 300px; }
+	.login-container .offset-by-six 					{ padding-left: 360px; }
+	.login-container .offset-by-seven 				{ padding-left: 420px; }
+	.login-container .offset-by-eight 				{ padding-left: 480px; }
+	.login-container .offset-by-nine 					{ padding-left: 540px; }
+	.login-container .offset-by-ten 					{ padding-left: 600px; }
+	.login-container .offset-by-eleven 				{ padding-left: 660px; }
+	.login-container .offset-by-twelve 				{ padding-left: 720px; }
+	.login-container .offset-by-thirteen 			{ padding-left: 780px; }
+	.login-container .offset-by-fourteen 			{ padding-left: 840px; }
+	.login-container .offset-by-fifteen 			{ padding-left: 900px; }
 	
 	
 	
@@ -65,48 +65,48 @@
 	/* Note: Design for a width of 768px */
 
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
-		.container { width: 768px; }
-		.container .column, 
-		.container .columns { margin-left: 10px; margin-right: 10px;  }
+		.login-container { width: 768px; }
+		.login-container .column, 
+		.login-container .columns { margin-left: 10px; margin-right: 10px;  }
 		.column.alpha, .columns.alpha 				{ margin-left: 0; margin-right: 10px; }
 		.column.omega, .columns.omega 				{ margin-right: 0; margin-left: 10px; }
 	
-		.container .one.column 							{ width: 28px;  }
-		.container .two.columns 						{ width: 76px; }
-		.container .three.columns 					{ width: 124px; }
-		.container .four.columns 						{ width: 172px; }
-		.container .five.columns 						{ width: 220px; }
-		.container .six.columns 						{ width: 268px; }
-		.container .seven.columns 					{ width: 316px; }	
-		.container .eight.columns 					{ width: 364px; }
-		.container .nine.columns 						{ width: 412px; }
-		.container .ten.columns 						{ width: 460px; }	
-		.container .eleven.columns 					{ width: 508px; }	
-		.container .twelve.columns 					{ width: 556px; }
-		.container .thirteen.columns 				{ width: 604px; }	
-		.container .fourteen.columns 				{ width: 652px; }	
-		.container .fifteen.columns 				{ width: 700px; }
-		.container .sixteen.columns 				{ width: 748px; }
+		.login-container .one.column 							{ width: 28px;  }
+		.login-container .two.columns 						{ width: 76px; }
+		.login-container .three.columns 					{ width: 124px; }
+		.login-container .four.columns 						{ width: 172px; }
+		.login-container .five.columns 						{ width: 220px; }
+		.login-container .six.columns 						{ width: 268px; }
+		.login-container .seven.columns 					{ width: 316px; }	
+		.login-container .eight.columns 					{ width: 364px; }
+		.login-container .nine.columns 						{ width: 412px; }
+		.login-container .ten.columns 						{ width: 460px; }	
+		.login-container .eleven.columns 					{ width: 508px; }	
+		.login-container .twelve.columns 					{ width: 556px; }
+		.login-container .thirteen.columns 				{ width: 604px; }	
+		.login-container .fourteen.columns 				{ width: 652px; }	
+		.login-container .fifteen.columns 				{ width: 700px; }
+		.login-container .sixteen.columns 				{ width: 748px; }
 		
-		.container .one-third.column				{ width: 236px; }
-		.container .two-thirds.column				{ width: 492px; }		
+		.login-container .one-third.column				{ width: 236px; }
+		.login-container .two-thirds.column				{ width: 492px; }		
 		
 		/* Offsets */	
-		.container .offset-by-one 					{ padding-left: 48px;  }
-		.container .offset-by-two 					{ padding-left: 96px; }
-		.container .offset-by-three 				{ padding-left: 144px; }
-		.container .offset-by-four 					{ padding-left: 192px; }
-		.container .offset-by-five 					{ padding-left: 288px; }
-		.container .offset-by-six 					{ padding-left: 336px; }
-		.container .offset-by-seven 				{ padding-left: 348px; }
-		.container .offset-by-eight 				{ padding-left: 432px; }
-		.container .offset-by-nine 					{ padding-left: 480px; }
-		.container .offset-by-ten 					{ padding-left: 528px; }
-		.container .offset-by-eleven 				{ padding-left: 576px; }
-		.container .offset-by-twelve 				{ padding-left: 624px; }
-		.container .offset-by-thirteen 			{ padding-left: 672px; }
-		.container .offset-by-fourteen 			{ padding-left: 720px; }
-		.container .offset-by-fifteen 			{ padding-left: 900px; }
+		.login-container .offset-by-one 					{ padding-left: 48px;  }
+		.login-container .offset-by-two 					{ padding-left: 96px; }
+		.login-container .offset-by-three 				{ padding-left: 144px; }
+		.login-container .offset-by-four 					{ padding-left: 192px; }
+		.login-container .offset-by-five 					{ padding-left: 288px; }
+		.login-container .offset-by-six 					{ padding-left: 336px; }
+		.login-container .offset-by-seven 				{ padding-left: 348px; }
+		.login-container .offset-by-eight 				{ padding-left: 432px; }
+		.login-container .offset-by-nine 					{ padding-left: 480px; }
+		.login-container .offset-by-ten 					{ padding-left: 528px; }
+		.login-container .offset-by-eleven 				{ padding-left: 576px; }
+		.login-container .offset-by-twelve 				{ padding-left: 624px; }
+		.login-container .offset-by-thirteen 			{ padding-left: 672px; }
+		.login-container .offset-by-fourteen 			{ padding-left: 720px; }
+		.login-container .offset-by-fifteen 			{ padding-left: 900px; }
 	}
 	
 	
@@ -116,44 +116,44 @@
 	/* Note: Design for a width of 320px */
 	
 	@media only screen and (max-width: 767px) {
-		.container { width: 300px; }
+		.login-container { width: 300px; }
 		.columns, .column { margin: 0; }
 		
-		.container .one.column,
-		.container .two.columns,
-		.container .three.columns,
-		.container .four.columns,
-		.container .five.columns,
-		.container .six.columns,
-		.container .seven.columns,
-		.container .eight.columns,
-		.container .nine.columns,
-		.container .ten.columns,
-		.container .eleven.columns,
-		.container .twelve.columns,
-		.container .thirteen.columns,
-		.container .fourteen.columns,
-		.container .fifteen.columns,
-		.container .sixteen.columns, 
-		.container .one-third.column, 
-		.container .two-thirds.column  { width: 300px; }
+		.login-container .one.column,
+		.login-container .two.columns,
+		.login-container .three.columns,
+		.login-container .four.columns,
+		.login-container .five.columns,
+		.login-container .six.columns,
+		.login-container .seven.columns,
+		.login-container .eight.columns,
+		.login-container .nine.columns,
+		.login-container .ten.columns,
+		.login-container .eleven.columns,
+		.login-container .twelve.columns,
+		.login-container .thirteen.columns,
+		.login-container .fourteen.columns,
+		.login-container .fifteen.columns,
+		.login-container .sixteen.columns, 
+		.login-container .one-third.column, 
+		.login-container .two-thirds.column  { width: 300px; }
 		
 		/* Offsets */	
-		.container .offset-by-one,				
-		.container .offset-by-two, 					
-		.container .offset-by-three, 				
-		.container .offset-by-four, 					
-		.container .offset-by-five, 					
-		.container .offset-by-six, 					
-		.container .offset-by-seven, 				
-		.container .offset-by-eight, 				
-		.container .offset-by-nine, 					
-		.container .offset-by-ten, 					
-		.container .offset-by-eleven, 				
-		.container .offset-by-twelve, 				
-		.container .offset-by-thirteen, 			
-		.container .offset-by-fourteen, 			
-		.container .offset-by-fifteen { padding-left: 0; } 			
+		.login-container .offset-by-one,				
+		.login-container .offset-by-two, 					
+		.login-container .offset-by-three, 				
+		.login-container .offset-by-four, 					
+		.login-container .offset-by-five, 					
+		.login-container .offset-by-six, 					
+		.login-container .offset-by-seven, 				
+		.login-container .offset-by-eight, 				
+		.login-container .offset-by-nine, 					
+		.login-container .offset-by-ten, 					
+		.login-container .offset-by-eleven, 				
+		.login-container .offset-by-twelve, 				
+		.login-container .offset-by-thirteen, 			
+		.login-container .offset-by-fourteen, 			
+		.login-container .offset-by-fifteen { padding-left: 0; } 			
 				
 	}	 
 	
@@ -164,27 +164,27 @@
 	/* Note: Design for a width of 480px */
 	
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
-		.container { width: 420px; }
+		.login-container { width: 420px; }
 		.columns, .column { margin: 0; }
 		
-		.container .one.column,
-		.container .two.columns,
-		.container .three.columns,
-		.container .four.columns,
-		.container .five.columns,
-		.container .six.columns,
-		.container .seven.columns,
-		.container .eight.columns,
-		.container .nine.columns,
-		.container .ten.columns,
-		.container .eleven.columns,
-		.container .twelve.columns,
-		.container .thirteen.columns,
-		.container .fourteen.columns,
-		.container .fifteen.columns,
-		.container .sixteen.columns,
-		.container .one-third.column, 
-		.container .two-thirds.column { width: 420px; }
+		.login-container .one.column,
+		.login-container .two.columns,
+		.login-container .three.columns,
+		.login-container .four.columns,
+		.login-container .five.columns,
+		.login-container .six.columns,
+		.login-container .seven.columns,
+		.login-container .eight.columns,
+		.login-container .nine.columns,
+		.login-container .ten.columns,
+		.login-container .eleven.columns,
+		.login-container .twelve.columns,
+		.login-container .thirteen.columns,
+		.login-container .fourteen.columns,
+		.login-container .fifteen.columns,
+		.login-container .sixteen.columns,
+		.login-container .one-third.column, 
+		.login-container .two-thirds.column { width: 420px; }
 	}
 	 
 	
@@ -192,7 +192,7 @@
 ================================================== */
 
 	/* Self Clearing Goodness */
-	.container:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } 
+	.login-container:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } 
 	
 	/* Use clearfix class on parent to clear nested columns, 
 	or wrap each row of columns in a <div class="row"> */
