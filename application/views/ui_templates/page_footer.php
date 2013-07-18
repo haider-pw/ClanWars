@@ -92,6 +92,4 @@
 <script type="text/javascript" src="<?php echo base_url('scripts/jquery.mousewheel.min.js'); ?>" ></script>
 <script type="text/javascript" src="<?php echo base_url('scripts/general.js'); ?>"></script>
 </body>
-
-<!-- Mirrored from xhtml.webtemplatemasters.com/games/index.html by HTTrack Website Copier/3.x [XR&CO'2010], Fri, 21 Jun 2013 05:38:34 GMT -->
 </html>

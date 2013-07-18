@@ -1,7 +1,6 @@
-@import url(../fancybox/jquery.fancybox.css); /* jQuery FancyBox */
-@import url(../stylesheets/jplayer.css); /* jQuery jPlayer */
-@import url(../themeChanger/css/themeChanger.css);
-@import url(../themeChanger/css/colorpicker.css);
+@import url(jquery.fancybox.css); /* jQuery FancyBox */
+@import url(jplayer.css); /* jQuery jPlayer */
+
 
 
 /* ---------------------- 

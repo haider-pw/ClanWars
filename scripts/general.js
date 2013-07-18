@@ -66,31 +66,31 @@ jQuery.extend({
 
 /************** Include Javascript Files ***************/
 
-$.include('js/jquery.smoothmenu.min.js')
-$.include('js/jflickrfeed.min.js');
+$.include('scripts/libs/jquery.smoothmenu.min.js')
+$.include('scripts/libs/jflickrfeed.min.js');
 
 if($('#showcase').length) {
-	$.include('js/jquery.aw-showcase.min.js');
+	$.include('scripts/libs/jquery.aw-showcase.min.js');
 }
 
 if($('#mycarousel').length) {
-	$.include('js/jquery.jcarousel.min.html');
+	$.include('scripts/libs/jquery.jcarousel.min.html');
 }
 
 if($('#jplayer').length) {
-	$.include('js/jquery.jplayer.min.js');
+	$.include('scripts/libs/jquery.jplayer.min.js');
 }
 
 if($('#gallery').length) {
-	$.include('js/jquery.easing.1.3.min.js');
-	$.include('js/jquery.quicksand.js');
+	$.include('scripts/libs/jquery.easing.1.3.min.js');
+	$.include('scripts/libs/jquery.quicksand.js');
 }
 
-$.include('fancybox/jquery.fancybox.pack.js');
-if($('#jstwitter').length) {$.include('js/twitter.js');}
-if($('.star').length) {$.include('js/jquery.raty.min.js');}
-if($('#scroll-pane').length) {$.include('js/jquery.mousewheel.min.js');}
-if($('#scroll-pane').length) {$.include('js/jquery.jscrollpane.min.html');}
+$.include('scripts/libs/jquery.fancybox.pack.js');
+if($('#jstwitter').length) {$.include('scripts/libs/twitter.js');}
+if($('.star').length) {$.include('scripts/libs/jquery.raty.min.js');}
+if($('#scroll-pane').length) {$.include('scripts/libs/jquery.mousewheel.min.js');}
+if($('#scroll-pane').length) {$.include('scripts/libs/jquery.jscrollpane.min.html');}
 
 /* Load Google Fonts --> Begin */
 	WebFontConfig = {

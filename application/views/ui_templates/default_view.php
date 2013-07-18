@@ -46,10 +46,10 @@
 
 <div class="showcase-slide">
     <div class="showcase-entry">
-        <img src="images/slider/03.jpg" width="730" height="460" alt="03" />
+        <img src="/styles/main/images/slider/01.jpg" width="730" height="460" alt="03" />
     </div>
     <div class="showcase-thumbnail">
-        <img src="images/slider/thumbs/03.jpg" alt="03"  />
+        <img src="styles/main/images/slider/03.jpg" alt="03"  />
         <span class="showcase-thumbnail-console">Xbox 360, Wii</span>
         <h6 class="showcase-thumbnail-title"><a href="#">incididunt 2</a></h6>
     </div>
@@ -67,10 +67,10 @@
 
 <div class="showcase-slide">
     <div class="showcase-entry">
-        <img src="images/slider/04.jpg" width="730" height="460" alt="04" />
+        <img src="styles/main/images/slider/04.jpg" width="730" height="460" alt="04" />
     </div>
     <div class="showcase-thumbnail">
-        <img src="images/slider/thumbs/04.jpg" alt="04"  />
+        <img src="styles/main/images/slider/thumbs/04.jpg" alt="04"  />
         <span class="showcase-thumbnail-console">Xbox 360, Pc</span>
         <h6 class="showcase-thumbnail-title"><a href="#">do eiusmod sed</a></h6>
     </div>
@@ -89,11 +89,11 @@
 <div class="showcase-slide">
     <!-- Put the slide content in a div with the class .showcase-content. -->
     <div class="showcase-entry">
-        <img src="images/slider/05.jpg" width="730" height="460" alt="05" />
+        <img src="styles/main/images/slider/05.jpg" width="730" height="460" alt="05" />
     </div>
     <!-- Put the thumbnail content in a div with the class .showcase-thumbnail -->
     <div class="showcase-thumbnail">
-        <img src="images/slider/thumbs/05.jpg" alt="05" />
+        <img src="styles/main/images/slider/thumbs/05.jpg" alt="05" />
         <span class="showcase-thumbnail-console">Xbox 360</span>
         <h6 class="showcase-thumbnail-title"><a href="#">dolore at magna</a></h6>
     </div>
@@ -112,11 +112,11 @@
 <div class="showcase-slide">
     <!-- Put the slide content in a div with the class .showcase-content. -->
     <div class="showcase-entry">
-        <img src="images/slider/06.jpg" width="730" height="460" alt="06" />
+        <img src="styles/main/images/slider/06.jpg" width="730" height="460" alt="06" />
     </div>
     <!-- Put the thumbnail content in a div with the class .showcase-thumbnail -->
     <div class="showcase-thumbnail">
-        <img src="images/slider/thumbs/06.jpg" alt="06" />
+        <img src="styles/main/images/slider/thumbs/06.jpg" alt="06" />
         <span class="showcase-thumbnail-console">PC, PS3</span>
         <h6 class="showcase-thumbnail-title"><a href="#">et dolore magna: aliqua</a></h6>
     </div>
@@ -134,10 +134,10 @@
 
 <div class="showcase-slide">
     <div class="showcase-entry">
-        <img src="images/slider/03.jpg" width="730" height="460" alt="03" />
+        <img src="styles/main/images/slider/03.jpg" width="730" height="460" alt="03" />
     </div>
     <div class="showcase-thumbnail">
-        <img src="images/slider/thumbs/03.jpg" alt="03"  />
+        <img src="styles/main/images/slider/thumbs/03.jpg" alt="03"  />
         <span class="showcase-thumbnail-console">Xbox 360, Wii</span>
         <h6 class="showcase-thumbnail-title"><a href="#">incididunt 2</a></h6>
     </div>
@@ -155,10 +155,10 @@
 
 <div class="showcase-slide">
     <div class="showcase-entry">
-        <img src="images/slider/04.jpg" width="730" height="460" alt="04" />
+        <img src="styles/main/images/slider/04.jpg" width="730" height="460" alt="04" />
     </div>
     <div class="showcase-thumbnail">
-        <img src="images/slider/thumbs/04.jpg" alt="04"  />
+        <img src="styles/main/images/slider/thumbs/04.jpg" alt="04"  />
         <span class="showcase-thumbnail-console">Xbox 360, Pc</span>
         <h6 class="showcase-thumbnail-title"><a href="#">do eiusmod sed</a></h6>
     </div>
@@ -177,11 +177,11 @@
 <div class="showcase-slide">
     <!-- Put the slide content in a div with the class .showcase-content. -->
     <div class="showcase-entry">
-        <img src="images/slider/05.jpg" width="730" height="460" alt="05" />
+        <img src="styles/main/images/slider/05.jpg" width="730" height="460" alt="05" />
     </div>
     <!-- Put the thumbnail content in a div with the class .showcase-thumbnail -->
     <div class="showcase-thumbnail">
-        <img src="images/slider/thumbs/05.jpg" alt="05" />
+        <img src="styles/main/images/slider/thumbs/05.jpg" alt="05" />
         <span class="showcase-thumbnail-console">Xbox 360</span>
         <h6 class="showcase-thumbnail-title"><a href="#">dolore at magna</a></h6>
     </div>
