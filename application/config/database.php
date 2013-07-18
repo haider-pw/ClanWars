@@ -49,8 +49,8 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = '192.168.0.102';
-$db['default']['username'] = 'Usman';
-$db['default']['password'] = 'Usman123';
+$db['default']['username'] = 'Kill3rCoder';
+$db['default']['password'] = 'pakistan@321';
 $db['default']['database'] = 'clanwars';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
