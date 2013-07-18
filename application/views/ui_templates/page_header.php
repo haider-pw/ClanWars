@@ -38,6 +38,17 @@
 
 </head>
 <body class="h-style-1 text-1 skin-1 background-7">
+<div id="error_message">
+    Error Occurred.
+</div><!-- end of error_message -->
+
+<div id="warning_message">
+    Warning!. Make sure you perform the correct action.
+</div><!-- End of warning_message -->
+
+<div id="notification_message">
+    The Action has been completed Successfully.
+</div><!-- End of notification_message -->
 
 
 

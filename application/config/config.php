@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://testwebsite.dev/ClanWars/';
+$config['base_url']	= 'http://localhost/projects/ClanWars/';
 
 /*
 |--------------------------------------------------------------------------

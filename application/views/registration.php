@@ -14,17 +14,7 @@
 </head>
 
 <body>
-<div id="error_message">
-    Error Occurred.
-</div><!-- end of error_message -->
 
-<div id="warning_message">
-    Warning!. Make sure you perform the correct action.
-</div><!-- End of warning_message -->
-
-<div id="notification_message">
-    The Action has been completed Successfully.
-</div><!-- End of notification_message -->
 <div id="carbonForm">
     <h1>Signup</h1>
 
