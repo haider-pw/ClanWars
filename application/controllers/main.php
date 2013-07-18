@@ -18,6 +18,11 @@ parent::__construct();
 {
     $this->load->view('ui_templates/default_view');
 }
+    function default_form_view()
+    {
+        $this->load->view('ui_templates/default_forums');
+    }
+
 
     function validation_form()
     {

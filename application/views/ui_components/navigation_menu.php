@@ -15,7 +15,7 @@
                 <li><a href="404page.html">404 Page</a></li>
             </ul><!--/ .sub-menu-->
         </li>
-        <li><a href="headings.html">Features</a>
+        <li><a href="<?php echo site_url('#/forums'); ?>">FORUMS</a>
             <ul class="sub-menu">
                 <li><a href="headings.html">Headings</a></li>
                 <li><a href="images-and-floats.html">Images and floats</a></li>

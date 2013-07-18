@@ -3,6 +3,10 @@ angular.module('link',[],function($routeProvider, $locationProvider){
         templateUrl:BASE_URL+'index.php/users/login'
     });
 
+    $routeProvider.when('/forums', {
+        templateUrl:BASE_URL+'index.php/main/default_form_view'
+    });
+
     $routeProvider.when('/register', {
         templateUrl:BASE_URL+'index.php/main/validation_form'
     });

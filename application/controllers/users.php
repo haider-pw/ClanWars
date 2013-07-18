@@ -17,10 +17,11 @@ class Users extends MY_Controller {
     {
         $user = $_POST['UserName'];
         $password = $_POST['Password'];
+        $pass=$this->Common_Model->hash($password);
         $user_data = array
         (
             'UserName' => $user,
-            'Password' => $password
+            'Password' => $pass
         );
         $result=$this->Common_Model->login($user_data);
         if($result==true)

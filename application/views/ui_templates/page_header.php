@@ -40,6 +40,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('styles/custom-notifications.css');?>" />
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('styles/messages.css');?>" />
     <script type="text/javascript" src="<?php echo base_url('scripts/custom-functions.js'); ?>"></script>
+    <script type="text/javascript" src="js/general.js"></script>
 
 </head>
 <body class="h-style-1 text-1 skin-1 background-7">
