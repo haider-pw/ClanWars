@@ -14,6 +14,11 @@ parent::__construct();
         $this->load->view('main');
     }
 
+    function default_view()
+{
+    $this->load->view('ui_templates/default_view');
+}
+
     function validation_form()
     {
         $this->load->view('registration');
