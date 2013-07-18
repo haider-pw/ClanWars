@@ -38,7 +38,27 @@ class Users extends MY_Controller {
         $this->load->view('main');
     }
     function register_user(){
-     $a=$this->input->post('UserName');
-     print_r($a);
+        $user=$this->input->post('UserName');
+        $game_name=$this->input->post('game_name');
+        $cnic=$this->input->post('cnic');
+        $age=$this->input->post('age');
+        $email=$this->input->post('email');
+        $password=$this->input->post('password');
+        $gender=$this->input->post('gender');
+        $pass=$this->Common_Model->hash($password);
+        $table="cw_user";
+        $user_data = array
+        (
+            'UserName' => $user,
+            'InGameName' => $game_name,
+            'Cnic' => $cnic,
+            'age' => $age,
+            'email' => $email,
+            'gender' => $gender,
+            'Password' => $pass
+        );
+        $this->Common_Model->insert($table,$user_data);
+
+
     }
 }
