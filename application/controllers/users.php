@@ -38,6 +38,7 @@ class Users extends MY_Controller {
         $this->load->view('main');
     }
     function register_user(){
-
+     $a=$this->input->post('UserName');
+     print_r($a);
     }
 }
