@@ -208,7 +208,7 @@
             return;
         }
 
-        $("#insert_user").ajaxSubmit({
+        $("#register_user").ajaxSubmit({
             success: function(response){
                 var data = response.split(":::")
                 if(data[0] == 'error')
