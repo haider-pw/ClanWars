@@ -47,7 +47,7 @@
 
             <?php } else { ?>
 
-                <li><a href="<?php echo base_url('index.php/users/login'); ?>">Login</a></li>
+                <li><a href="<?php echo site_url('#/login'); ?>">Login</a></li>
                 <li><a href="<?php echo base_url('index.php/main/validation_form'); ?>">Create an account</a></li>
 
 

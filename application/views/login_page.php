@@ -13,33 +13,26 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <!--<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>-->
     <![endif]-->
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="<?php echo base_url('styles/login/css/base.css');?>">
-    <link rel="stylesheet" href="<?php echo base_url('styles/login/css/skeleton.css');?>">
-    <link rel="stylesheet" href="<?php echo base_url('styles/login/css/layout.css');?>">
+<!--    <link rel="stylesheet" href="--><?php //echo base_url('styles/login/css/base.css');?><!--">-->
+<!--    <link rel="stylesheet" href="--><?php //echo base_url('styles/login/css/skeleton.css');?><!--">-->
+<!--    <link rel="stylesheet" href="--><?php //echo base_url('styles/login/css/layout.css');?><!--">-->
 
 </head>
 <body>
-
-<div class="notice">
-    <a href="" class="close">close</a>
-    <p class="warn">Whoops! We didn't recognise your username or password. Please try again.</p>
-</div>
-
-
 
 <!-- Primary Page Layout -->
 
 <div class="container">
 
     <div class="form-bg">
-        <form method="post" action="login_user">
+        <form method="post" action="<?php echo base_url('index.php/users/login_user');?>">
             <h2>Login</h2>
             <p><input type="text" name="UserName" placeholder="Username"></p>
             <p><input type="password" name="Password" placeholder="Password"></p>
@@ -58,9 +51,9 @@
 </div><!-- container -->
 
 <!-- JS  -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
-<script>window.jQuery || document.write("<script src='<?php echo base_url('scripts/jQuery1.7.1.js');?>'>\x3C/script>")</script>
-<script src="<?php echo base_url('scripts/app.js'); ?>"></script>
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>-->
+<!--<script>window.jQuery || document.write("<script src='--><?php //echo base_url('scripts/jQuery1.7.1.js');?><!--'>\x3C/script>")</script>-->
+<!--<script src="--><?php //echo base_url('scripts/app.js'); ?><!--"></script>-->
 
 <!-- End Document -->
 </body>

@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('styles/custom-notifications.css');?>" />
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('styles/messages.css');?>" />
     <script type="text/javascript" src="<?php echo base_url('scripts/jQuery1.7.1.js'); ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('scripts/jquery.form.js'); ?>"></script>
 
 </head>
 
@@ -149,7 +150,7 @@
         if(user == '')
         {
             //alert('Username is empty');
-            fading_msg("error_message","Username is empty");
+            fading_msg("error_message","Please enter your name");
             return;
         }
         if(user_n>0 && user_n<5)
@@ -159,12 +160,65 @@
             return;
         }
 
-        var pw = $("#Password").val();
-        var c_pw = $("#ConfirmPassword").val();
-
-        if( pw!=c_pw || (pw.length<5 && pw.length>0))
+        var g_name = $("#game_name").val();
+        if(g_name == '')
         {
-            alert('Password must be matched and Password must be atleast 5 characters long');
+            fading_msg("error_message","Please enter in Game Name ");
+            return;
+        }
+
+        var age = $("#age").val();
+        if(age == '')
+        {
+            fading_msg("error_message","Please enter your age ");
+            return;
+        }
+
+
+
+        var email = $("#email").val();
+        var re_email = $("#re_email").val();
+        if(email == '')
+        {
+            fading_msg("error_message","Please enter your email ");
+            return;
+        }
+
+        var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
+        if(!pattern.test(email))
+        {
+            fading_msg("error_message","Please enter a valid email ");
+            return;
+        }
+
+        else if(email != re_email)
+        {
+            fading_msg("error_message","Your email does not match");
+            return;
+        }
+
+
+        var pass = $("#password").val();
+        var c_pass = $("#ConfirmPassword").val();
+
+        if(pass == '' || pass==null)
+        {
+            fading_msg("error_message","Please enter password ");
+            return;
+        }
+
+
+        else if(pass.length<5 && pass.length>0)
+        {
+            fading_msg("error_message","Password must be atleast 5 characters long");
+            //fading_msg("error_message","Password must be matched and Password must be atleast 5 characters long");
+            return;
+        }
+
+
+        else if( pass!=c_pass)
+        {
+            fading_msg("error_message","Password must be matched");
             //fading_msg("error_message","Password must be matched and Password must be atleast 5 characters long");
             return;
         }
@@ -174,10 +228,10 @@
                 var data = response.split(":::")
                 if(data[0] == 'error')
                 {
-                    //fading_msg("error_message",data[1]);
+                   fading_msg("error_message",data[1]);
                 }else{
                     window.location.href = "<?php base_url('main/index'); ?>";
-                    //fading_msg("notification_message","New User is Created Successfully");
+                    fading_msg("notification_message","New User is Created Successfully");
                 }
             },
             error:function(xhr,error_status,error_thrown){

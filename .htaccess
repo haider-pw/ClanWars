@@ -1,5 +1,5 @@
 RewriteEngine on
-RewriteBase /projects/ClanWars
+RewriteBase /ClanWars/
 # Hide the application and system directories by redirecting the request to index.php
 
 RewriteRule ^(application|system|\.svn) index.php/$1 [L]

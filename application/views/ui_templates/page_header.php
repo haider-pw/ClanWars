@@ -19,6 +19,23 @@
     <script type="text/javascript" src="<?php echo base_url('scripts/ie.js');?>"></script>
     <![endif]-->
 
+<!--    loads angular library-->
+       <script src="<?php echo base_url('scripts/angular.min.js');?>"></script>
+
+<!--    login page scripts-->
+    <script>
+        var BASE_URL = "<?php echo base_url(); ?>";
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+    <script>window.jQuery || document.write("<script src='<?php echo base_url('scripts/jQuery1.7.1.js');?>'>\x3C/script>")</script>
+    <script src="<?php echo base_url('scripts/app.js'); ?>"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="<?php echo base_url('scripts/app.js'); ?>"></script>
+    <script src="<?php echo base_url('scripts/angular_login.js'); ?>"></script>
+    <link rel="stylesheet" href="<?php echo base_url('styles/login/css/base.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url('styles/login/css/skeleton.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url('styles/login/css/layout.css');?>">
+
 </head>
 <body class="h-style-1 text-1 skin-1 background-7">
 

@@ -22,7 +22,7 @@
 
 
 <!-- *************** - Container - *************** -->
-<div class="container">
+<div class="container" ng-app="link">
 
 
 <!-- ************** - Search - ************** -->
@@ -115,6 +115,7 @@
 
 
 <!-- ************** - Featured Slider - ************** -->
+<div ng-view>
 <div id="showcase" class="showcase">
 
 <div class="showcase-slide">
@@ -436,6 +437,7 @@
 
 
 <!-- ************** - Entry - ************** -->
+
 <div class="entry sbr clearfix">
 
 
@@ -1159,4 +1161,8 @@
 
 
 </div><!--/ .entry-->
+</div>
 <!-- ************** - END Entry - ************** -->
+<div>
+
+</div>
