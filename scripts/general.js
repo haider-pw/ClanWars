@@ -108,12 +108,6 @@ if($('#scroll-pane').length) {$.include('scripts/libs/jquery.jscrollpane.min.htm
 /* Load Google Fonts --> End */
 
 
-/* Panel --> Begin */
-$.include('themeChanger/js/colorpicker.js')
-$.include('themeChanger/js/themeChanger.js')
-/* Panel --> End */
-
-
 /*********************** DOM READY --> Begin ****************************/
 
 jQuery(document).ready(function(){
