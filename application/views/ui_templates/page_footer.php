@@ -89,7 +89,7 @@
 
 <!-- ***************** - END Wrapper - ***************** -->
 <script type="text/javascript" src="<?php echo base_url('scripts/jquery-ui-1.8.16.custom.min.js'); ?>"></script>
-<script type="text/javascript" src="<?php echo base_url('scripts/jquery.mousewheel.min.js'); ?>" ></script>
+<script type="text/javascript" src="<?php echo base_url('scripts/libs/jquery.mousewheel.min.js'); ?>" ></script>
 <script type="text/javascript" src="<?php echo base_url('scripts/general.js'); ?>"></script>
 </body>
 </html>

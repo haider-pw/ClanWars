@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Clan Wars | User Registration</title>
 
-
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('styles/register/styles.css');?>" />
 
 </head>
 

@@ -3,11 +3,11 @@
 <div class="showcase-slide">
     <!-- Put the slide content in a div with the class .showcase-content. -->
     <div class="showcase-entry">
-        <img src="images/slider/01.jpg" width="730" height="460" alt="01" />
+        <img src="styles/main/images/slider/01.jpg" width="730" height="460" alt="01" />
     </div>
     <!-- Put the thumbnail content in a div with the class .showcase-thumbnail -->
     <div class="showcase-thumbnail">
-        <img src="images/slider/thumbs/01.jpg" alt="01" />
+        <img src="styles/main/images/slider/01.jpg" alt="01" />
         <span class="showcase-thumbnail-console">Xbox 360</span>
         <h6 class="showcase-thumbnail-title"><a href="#">Consectetur</a></h6>
     </div>
@@ -25,10 +25,10 @@
 
 <div class="showcase-slide">
     <div class="showcase-entry">
-        <img src="images/slider/02.jpg" width="730" height="460" alt="02" />
+        <img src="styles/main/images/slider/02.jpg" width="730" height="460" alt="02" />
     </div>
     <div class="showcase-thumbnail">
-        <img src="images/slider/thumbs/02.jpg" alt="02" />
+        <img src="styles/main/images/slider/02.jpg" alt="02" />
         <span class="showcase-thumbnail-console">PC, PS3</span>
         <h6 class="showcase-thumbnail-title"><a href="#">adipisicing consectetur elit</a></h6>
     </div>
@@ -200,11 +200,11 @@
 <div class="showcase-slide">
     <!-- Put the slide content in a div with the class .showcase-content. -->
     <div class="showcase-entry">
-        <img src="images/slider/06.jpg" width="730" height="460" alt="06" />
+        <img src="styles/main/images/slider/06.jpg" width="730" height="460" alt="06" />
     </div>
     <!-- Put the thumbnail content in a div with the class .showcase-thumbnail -->
     <div class="showcase-thumbnail">
-        <img src="images/slider/thumbs/06.jpg" alt="06" />
+        <img src="styles/main/images/slider/thumbs/06.jpg" alt="06" />
         <span class="showcase-thumbnail-console">PC, PS3</span>
         <h6 class="showcase-thumbnail-title"><a href="#">et dolore magna: aliqua</a></h6>
     </div>
@@ -238,7 +238,7 @@
         <div class="scroller_block">
             <ul style="width:1980px">
                 <li>
-                    <a href="#"><img class="small-custom-frame" src="images/temp/temp_img_1.jpg" width="222" height="137" alt="" /></a>
+                    <a href="#"><img class="small-custom-frame" src="styles/main/images/temp/temp_img_1.jpg" width="222" height="137" alt="" /></a>
                     <div class="scroll-caption">
                         <span>Xbox 360</span>
                         <h6><a href="#">Lorem ipsum dolor sit amet consec</a></h6>
@@ -246,7 +246,7 @@
                     </div><!--/ .scroll-caption-->
                 </li>
                 <li>
-                    <a href="#"><img class="small-custom-frame" src="images/temp/temp_img_2.jpg" width="222" height="137" alt="" /></a>
+                    <a href="#"><img class="small-custom-frame" src="styles/main/images/temp/temp_img_2.jpg" width="222" height="137" alt="" /></a>
                     <div class="scroll-caption">
                         <span>Xbox 360</span>
                         <h6><a href="#">Lorem ipsum dolor sit amet consec</a></h6>
@@ -254,7 +254,7 @@
                     </div><!--/ .scroll-caption-->
                 </li>
                 <li>
-                    <a href="#"><img class="small-custom-frame" src="images/temp/temp_img_3.jpg" width="222" height="137" alt="" /></a>
+                    <a href="#"><img class="small-custom-frame" src="styles/main/images/temp/temp_img_3.jpg" width="222" height="137" alt="" /></a>
                     <div class="scroll-caption">
                         <span>Xbox 360</span>
                         <h6><a href="#">Lorem ipsum dolor sit amet consec</a></h6>
@@ -262,7 +262,7 @@
                     </div><!--/ .scroll-caption-->
                 </li>
                 <li>
-                    <a href="#"><img class="small-custom-frame" src="images/temp/temp_img_4.jpg" width="222" height="137" alt="" /></a>
+                    <a href="#"><img class="small-custom-frame" src="styles/main/images/temp/temp_img_4.jpg" width="222" height="137" alt="" /></a>
                     <div class="scroll-caption">
                         <span>Xbox 360</span>
                         <h6><a href="#">Lorem ipsum dolor sit amet consec</a></h6>
@@ -270,7 +270,7 @@
                     </div><!--/ .scroll-caption-->
                 </li>
                 <li>
-                    <a href="#"><img class="small-custom-frame" src="images/temp/temp_img_1.jpg" width="222" height="137" alt="" /></a>
+                    <a href="#"><img class="small-custom-frame" src="styles/main/images/temp/temp_img_1.jpg" width="222" height="137" alt="" /></a>
                     <div class="scroll-caption">
                         <span>Xbox 360</span>
                         <h6><a href="#">Lorem ipsum dolor sit amet consec</a></h6>
@@ -278,7 +278,7 @@
                     </div><!--/ .scroll-caption-->
                 </li>
                 <li>
-                    <a href="#"><img class="small-custom-frame" src="images/temp/temp_img_2.jpg" width="222" height="137" alt="" /></a>
+                    <a href="#"><img class="small-custom-frame" src="styles/main/images/temp/temp_img_2.jpg" width="222" height="137" alt="" /></a>
                     <div class="scroll-caption">
                         <span>Xbox 360</span>
                         <h6><a href="#">Lorem ipsum dolor sit amet consec</a></h6>
@@ -286,7 +286,7 @@
                     </div><!--/ .scroll-caption-->
                 </li>
                 <li>
-                    <a href="#"><img class="small-custom-frame" src="images/temp/temp_img_3.jpg" width="222" height="137" alt="" /></a>
+                    <a href="#"><img class="small-custom-frame" src="styles/main/images/temp/temp_img_3.jpg" width="222" height="137" alt="" /></a>
                     <div class="scroll-caption">
                         <span>Xbox 360</span>
                         <h6><a href="#">Lorem ipsum dolor sit amet consec</a></h6>
@@ -294,7 +294,7 @@
                     </div><!--/ .scroll-caption-->
                 </li>
                 <li>
-                    <a href="#"><img class="small-custom-frame" src="images/temp/temp_img_4.jpg" width="222" height="137" alt="" /></a>
+                    <a href="#"><img class="small-custom-frame" src="styles/main/images/temp/temp_img_4.jpg" width="222" height="137" alt="" /></a>
                     <div class="scroll-caption">
                         <span>Xbox 360</span>
                         <h6><a href="#">Lorem ipsum dolor sit amet consec</a></h6>
@@ -343,7 +343,7 @@
         <ul class="clearfix">
 
             <li>
-                <a href="#"><img src="images/temp/img_1.jpg" width="313" height="220" alt="" /></a>
+                <a href="#"><img src="styles/main/images/temp/img_1.jpg" width="313" height="220" alt="" /></a>
                 <div class="caption">
                     <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                     <h5 class="title"><a href="#">Lorem ipsum dolor sit amet consectetur</a></h5>
@@ -360,7 +360,7 @@
             </li>
 
             <li>
-                <a href="#"><img src="images/temp/img_2.jpg" width="313" height="220" alt="" /></a>
+                <a href="#"><img src="styles/main/images/temp/img_2.jpg" width="313" height="220" alt="" /></a>
                 <div class="caption">
                     <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                     <h5 class="title"><a href="#">nt in culpa qui offici</a></h5>
@@ -375,7 +375,7 @@
             </li>
 
             <li>
-                <a href="#"><img src="images/temp/temp_thumbs_1.jpg" width="159" height="100" alt="" /></a>
+                <a href="#"><img src="styles/main/images/temp/temp_thumbs_1.jpg" width="159" height="100" alt="" /></a>
                 <div class="caption">
                     <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                     <h5 class="title"><a href="#">sed do eiusmod tempor incididunt</a></h5>
@@ -391,7 +391,7 @@
             </li>
 
             <li>
-                <a href="#"><img src="images/temp/temp_thumbs_2.jpg" width="159" height="100" alt="" /></a>
+                <a href="#"><img src="styles/main/images/temp/temp_thumbs_2.jpg" width="159" height="100" alt="" /></a>
                 <div class="caption">
                     <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                     <h5 class="title"><a href="#">Lorem ipsum dolor sit amet consectetur</a></h5>
@@ -406,7 +406,7 @@
             </li>
 
             <li>
-                <a href="#"><img src="images/temp/temp_thumbs_3.jpg" width="159" height="100" alt="" /></a>
+                <a href="#"><img src="styles/main/images/temp/temp_thumbs_3.jpg" width="159" height="100" alt="" /></a>
                 <div class="caption">
                     <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                     <h5 class="title"><a href="#">ut labore et dolore magna aliqua</a></h5>
@@ -434,7 +434,7 @@
         <ul class="clearfix">
 
             <li>
-                <a href="#"><img src="images/temp/img_2.jpg" width="313" height="220" alt="" /></a>
+                <a href="#"><img src="styles/main/images/temp/img_2.jpg" width="313" height="220" alt="" /></a>
                 <div class="caption">
                     <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                     <h5 class="title"><a href="#">nt in culpa qui offici</a></h5>
@@ -449,7 +449,7 @@
             </li>
 
             <li>
-                <a href="#"><img src="images/temp/img_1.jpg" width="313" height="220" alt="" /></a>
+                <a href="#"><img src="styles/main/images/temp/img_1.jpg" width="313" height="220" alt="" /></a>
                 <div class="caption">
                     <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                     <h5 class="title"><a href="#">Lorem ipsum dolor sit amet consectetur</a></h5>
@@ -466,7 +466,7 @@
             </li>
 
             <li>
-                <a href="#"><img src="images/temp/temp_thumbs_3.jpg" width="159" height="100" alt="" /></a>
+                <a href="#"><img src="styles/main/images/temp/temp_thumbs_3.jpg" width="159" height="100" alt="" /></a>
                 <div class="caption">
                     <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                     <h5 class="title"><a href="#">ut labore et dolore magna aliqua</a></h5>
@@ -483,7 +483,7 @@
             </li>
 
             <li>
-                <a href="#"><img src="images/temp/temp_thumbs_1.jpg" width="159" height="100" alt="" /></a>
+                <a href="#"><img src="styles/main/images/temp/temp_thumbs_1.jpg" width="159" height="100" alt="" /></a>
                 <div class="caption">
                     <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                     <h5 class="title"><a href="#">sed do eiusmod tempor incididunt</a></h5>
@@ -499,7 +499,7 @@
             </li>
 
             <li>
-                <a href="#"><img src="images/temp/temp_thumbs_2.jpg" width="159" height="100" alt="" /></a>
+                <a href="#"><img src="styles/main/images/temp/temp_thumbs_2.jpg" width="159" height="100" alt="" /></a>
                 <div class="caption">
                     <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                     <h5 class="title"><a href="#">Lorem ipsum dolor sit amet consectetur</a></h5>
@@ -525,7 +525,7 @@
         <ul class="clearfix">
 
             <li>
-                <a href="#"><img src="images/temp/img_3.jpg" width="313" height="220" alt="" /></a>
+                <a href="#"><img src="styles/main/images/temp/img_3.jpg" width="313" height="220" alt="" /></a>
                 <div class="caption">
                     <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                     <h5 class="title"><a href="#">nt in culpa qui offici</a></h5>
@@ -542,7 +542,7 @@
             </li>
 
             <li>
-                <a href="#"><img src="images/temp/img_1.jpg" width="313" height="220" alt="" /></a>
+                <a href="#"><img src="styles/main/images/temp/img_1.jpg" width="313" height="220" alt="" /></a>
                 <div class="caption">
                     <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                     <h5 class="title"><a href="#">Lorem ipsum dolor sit amet consectetur</a></h5>
@@ -559,7 +559,7 @@
             </li>
 
             <li>
-                <a href="#"><img src="images/temp/temp_thumbs_2.jpg" width="159" height="100" alt="" /></a>
+                <a href="#"><img src="styles/main/images/temp/temp_thumbs_2.jpg" width="159" height="100" alt="" /></a>
                 <div class="caption">
                     <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                     <h5 class="title"><a href="#">Lorem ipsum dolor sit amet consectetur</a></h5>
@@ -574,7 +574,7 @@
             </li>
 
             <li>
-                <a href="#"><img src="images/temp/temp_thumbs_3.jpg" width="159" height="100" alt="" /></a>
+                <a href="#"><img src="styles/main/images/temp/temp_thumbs_3.jpg" width="159" height="100" alt="" /></a>
                 <div class="caption">
                     <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                     <h5 class="title"><a href="#">ut labore et dolore magna aliqua</a></h5>
@@ -591,7 +591,7 @@
             </li>
 
             <li>
-                <a href="#"><img src="images/temp/temp_thumbs_1.jpg" width="159" height="100" alt="" /></a>
+                <a href="#"><img src="styles/main/images/temp/temp_thumbs_1.jpg" width="159" height="100" alt="" /></a>
                 <div class="caption">
                     <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                     <h5 class="title"><a href="#">sed do eiusmod tempor incididunt</a></h5>
@@ -629,7 +629,7 @@
             <ul class="clearfix">
 
                 <li>
-                    <a href="#"><img src="images/temp/img_3.jpg" width="313" height="220" alt="" /></a>
+                    <a href="#"><img src="styles/main/images/temp/img_3.jpg" width="313" height="220" alt="" /></a>
                     <div class="caption">
                         <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                         <h5 class="title"><a href="#">deserunt mollit anim id est laborum</a></h5>
@@ -646,7 +646,7 @@
                 </li>
 
                 <li>
-                    <a href="#"><img src="images/temp/temp_thumbs_3.jpg" width="159" height="100" alt="" /></a>
+                    <a href="#"><img src="styles/main/images/temp/temp_thumbs_3.jpg" width="159" height="100" alt="" /></a>
                     <div class="caption">
                         <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                         <h5 class="title"><a href="#">ut labore et dolore magna aliqua</a></h5>
@@ -661,7 +661,7 @@
                 </li>
 
                 <li>
-                    <a href="#"><img src="images/temp/temp_thumbs_4.jpg" width="159" height="100" alt="" /></a>
+                    <a href="#"><img src="styles/main/images/temp/temp_thumbs_4.jpg" width="159" height="100" alt="" /></a>
                     <div class="caption">
                         <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                         <h5 class="title"><a href="#">Lorem ipsum dolor sit amet</a></h5>
@@ -677,7 +677,7 @@
                 </li>
 
                 <li>
-                    <a href="#"><img src="images/temp/temp_thumbs_5.jpg" width="159" height="100" alt="" /></a>
+                    <a href="#"><img src="styles/main/images/temp/temp_thumbs_5.jpg" width="159" height="100" alt="" /></a>
                     <div class="caption">
                         <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                         <h5 class="title"><a href="#">sed do eiusmod tempor</a></h5>
@@ -712,7 +712,7 @@
             <ul class="clearfix">
 
                 <li>
-                    <a href="#"><img src="images/temp/img_4.jpg" width="313" height="220" alt="" /></a>
+                    <a href="#"><img src="styles/main/images/temp/img_4.jpg" width="313" height="220" alt="" /></a>
                     <div class="caption">
                         <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                         <h5 class="title"><a href="#">Lorem ipsum dolor sit amet consectetur </a></h5>
@@ -727,7 +727,7 @@
                 </li>
 
                 <li>
-                    <a href="#"><img src="images/temp/temp_thumbs_3.jpg" width="159" height="100" alt="" /></a>
+                    <a href="#"><img src="styles/main/images/temp/temp_thumbs_3.jpg" width="159" height="100" alt="" /></a>
                     <div class="caption">
                         <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                         <h5 class="title"><a href="#">ut labore et dolore magna aliqua</a></h5>
@@ -742,7 +742,7 @@
                 </li>
 
                 <li>
-                    <a href="#"><img src="images/temp/temp_thumbs_4.jpg" width="159" height="100" alt="" /></a>
+                    <a href="#"><img src="styles/main/images/temp/temp_thumbs_4.jpg" width="159" height="100" alt="" /></a>
                     <div class="caption">
                         <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                         <h5 class="title"><a href="#">Lorem ipsum dolor do eiusmod tempor</a></h5>
@@ -758,7 +758,7 @@
                 </li>
 
                 <li>
-                    <a href="#"><img src="images/temp/temp_thumbs_5.jpg" width="159" height="100" alt="" /></a>
+                    <a href="#"><img src="styles/main/images/temp/temp_thumbs_5.jpg" width="159" height="100" alt="" /></a>
                     <div class="caption">
                         <span class="date">Thursday 22-Mar-2012 12:37 PM</span>
                         <h5 class="title"><a href="#">Lorem ipsum dolor sit amet</a></h5>
@@ -837,7 +837,7 @@
                 <div class="tab-content" id="tab4">
                     <ul class="rate">
                         <li>
-                            <a href="top-games.html"><img src="images/temp/temp_thumbs_4.jpg" width="94" height="60" alt="" class="alignleft" /></a>
+                            <a href="top-games.html"><img src="styles/main/images/temp/temp_thumbs_4.jpg" width="94" height="60" alt="" class="alignleft" /></a>
                             <div class="teaser-content">
                                 <h6><a class="title" href="top-games.html">Lorem ipsum dolor sit amet consec</a></h6>
                                 <div class="star"></div>
@@ -845,7 +845,7 @@
                             <div class="clear"></div>
                         </li>
                         <li>
-                            <a href="top-games.html"><img src="images/temp/temp_thumbs_5.jpg" width="94" height="60" alt="" class="alignleft" /></a>
+                            <a href="top-games.html"><img src="styles/main/images/temp/temp_thumbs_5.jpg" width="94" height="60" alt="" class="alignleft" /></a>
                             <div class="teaser-content">
                                 <h6><a class="title" href="top-games.html">Qui officia deserunt mollit anim id est laborum</a></h6>
                                 <div class="star"></div>
@@ -853,7 +853,7 @@
                             <div class="clear"></div>
                         </li>
                         <li>
-                            <a href="top-games.html"><img src="images/temp/temp_thumbs_6.jpg" width="94" height="60" alt="" class="alignleft" /></a>
+                            <a href="top-games.html"><img src="styles/main/images/temp/temp_thumbs_6.jpg" width="94" height="60" alt="" class="alignleft" /></a>
                             <div class="teaser-content">
                                 <h6><a class="title" href="top-games.html">Deserunt mollit anim id est laborum</a></h6>
                                 <div class="star"></div>
@@ -866,7 +866,7 @@
                 <div class="tab-content" id="tab5">
                     <ul class="rate">
                         <li>
-                            <a href="top-games.html"><img src="images/temp/temp_thumbs_5.jpg" width="94" height="60" alt="" class="alignleft" /></a>
+                            <a href="top-games.html"><img src="styles/main/images/temp/temp_thumbs_5.jpg" width="94" height="60" alt="" class="alignleft" /></a>
                             <div class="teaser-content">
                                 <h6><a class="title" href="top-games.html">Qui officia deserunt mollit anim id est laborum</a></h6>
                                 <div class="star"></div>
@@ -874,7 +874,7 @@
                             <div class="clear"></div>
                         </li>
                         <li>
-                            <a href="top-games.html"><img src="images/temp/temp_thumbs_4.jpg" width="94" height="60" alt="" class="alignleft" /></a>
+                            <a href="top-games.html"><img src="styles/main/images/temp/temp_thumbs_4.jpg" width="94" height="60" alt="" class="alignleft" /></a>
                             <div class="teaser-content">
                                 <h6><a class="title" href="top-games.html">Lorem ipsum dolor sit amet consec</a></h6>
                                 <div class="star"></div>
@@ -882,7 +882,7 @@
                             <div class="clear"></div>
                         </li>
                         <li>
-                            <a href="top-games.html"><img src="images/temp/temp_thumbs_6.jpg" width="94" height="60" alt="" class="alignleft" /></a>
+                            <a href="top-games.html"><img src="styles/main/images/temp/temp_thumbs_6.jpg" width="94" height="60" alt="" class="alignleft" /></a>
                             <div class="teaser-content">
                                 <h6><a class="title" href="top-games.html">Deserunt mollit anim id est laborum</a></h6>
                                 <div class="star"></div>
@@ -895,7 +895,7 @@
                 <div class="tab-content" id="tab6">
                     <ul class="rate">
                         <li>
-                            <a href="top-games.html"><img src="images/temp/temp_thumbs_5.jpg" width="94" height="60" alt="" class="alignleft" /></a>
+                            <a href="top-games.html"><img src="styles/main/images/temp/temp_thumbs_5.jpg" width="94" height="60" alt="" class="alignleft" /></a>
                             <div class="teaser-content">
                                 <h6><a class="title" href="top-games.html">Qui officia deserunt mollit anim id est laborum</a></h6>
                                 <div class="star"></div>
@@ -903,7 +903,7 @@
                             <div class="clear"></div>
                         </li>
                         <li>
-                            <a href="top-games.html"><img src="images/temp/temp_thumbs_6.jpg" width="94" height="60" alt="" class="alignleft" /></a>
+                            <a href="top-games.html"><img src="styles/main/images/temp/temp_thumbs_6.jpg" width="94" height="60" alt="" class="alignleft" /></a>
                             <div class="teaser-content">
                                 <h6><a class="title" href="top-games.html">Deserunt mollit anim id est laborum</a></h6>
                                 <div class="star"></div>
@@ -911,7 +911,7 @@
                             <div class="clear"></div>
                         </li>
                         <li>
-                            <a href="top-games.html"><img src="images/temp/temp_thumbs_4.jpg" width="94" height="60" alt="" class="alignleft" /></a>
+                            <a href="top-games.html"><img src="styles/main/images/temp/temp_thumbs_4.jpg" width="94" height="60" alt="" class="alignleft" /></a>
                             <div class="teaser-content">
                                 <h6><a class="title" href="top-games.html">Lorem ipsum dolor sit amet consec</a></h6>
                                 <div class="star"></div>
@@ -924,7 +924,7 @@
                 <div class="tab-content" id="tab7">
                     <ul class="rate">
                         <li>
-                            <a href="top-games.html"><img src="images/temp/temp_thumbs_6.jpg" width="94" height="60" alt="" class="alignleft" /></a>
+                            <a href="top-games.html"><img src="styles/main/images/temp/temp_thumbs_6.jpg" width="94" height="60" alt="" class="alignleft" /></a>
                             <div class="teaser-content">
                                 <h6><a class="title" href="top-games.html">Deserunt mollit anim id est laborum</a></h6>
                                 <div class="star"></div>
@@ -932,7 +932,7 @@
                             <div class="clear"></div>
                         </li>
                         <li>
-                            <a href="top-games.html"><img src="images/temp/temp_thumbs_4.jpg" width="94" height="60" alt="" class="alignleft" /></a>
+                            <a href="top-games.html"><img src="styles/main/images/temp/temp_thumbs_4.jpg" width="94" height="60" alt="" class="alignleft" /></a>
                             <div class="teaser-content">
                                 <h6><a class="title" href="top-games.html">Lorem ipsum dolor sit amet consec</a></h6>
                                 <div class="star"></div>
@@ -940,7 +940,7 @@
                             <div class="clear"></div>
                         </li>
                         <li>
-                            <a href="top-games.html"><img src="images/temp/temp_thumbs_5.jpg" width="94" height="60" alt="" class="alignleft" /></a>
+                            <a href="top-games.html"><img src="styles/main/images/temp/temp_thumbs_5.jpg" width="94" height="60" alt="" class="alignleft" /></a>
                             <div class="teaser-content">
                                 <h6><a class="title" href="top-games.html">Qui officia deserunt mollit anim id est laborum</a></h6>
                                 <div class="star"></div>
@@ -1009,7 +1009,7 @@
     <ul class="video-list">
         <li>
             <a class="zoom" href="top-games.html">
-                <img src="images/temp/video_img_1.jpg" width="94" height="60" alt="" />
+                <img src="styles/main/images/temp/video_img_1.jpg" width="94" height="60" alt="" />
             </a>
             <div class="teaser-content">
                 <h6><a class="title" href="top-games.html">Qui officia deserunt mollit anim id est laborum</a></h6>
@@ -1018,7 +1018,7 @@
             <div class="clear"></div>
         </li>
         <li>
-            <a class="zoom" href="top-games.html"><img src="images/temp/video_img_2.jpg" width="94" height="60" alt="" /></a>
+            <a class="zoom" href="top-games.html"><img src="styles/main/images/temp/video_img_2.jpg" width="94" height="60" alt="" /></a>
             <div class="teaser-content">
                 <h6><a class="title" href="top-games.html">Qui officia deserunt mollit anim id est laborum</a></h6>
                 <div class="star"></div>
@@ -1026,7 +1026,6 @@
             <div class="clear"></div>
         </li>
         <li>
-            <a class="zoom" href="top-games.html"><img src="images/temp/video_img_3.jpg" width="94" height="60" alt="" /></a>
             <div class="teaser-content">
                 <h6><a class="title" href="top-games.html">Qui officia deserunt mollit anim id est laborum</a></h6>
                 <div class="star"></div>
