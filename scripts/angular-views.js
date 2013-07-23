@@ -20,7 +20,7 @@ angular.module('link',[],function($routeProvider, $locationProvider){
 
 function default_view()
 {
-    $.include('scripts/general.js')
+    $.include('scripts/js_library.js')
 
 }
         /* awShowcase --> End */

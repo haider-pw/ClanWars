@@ -69,16 +69,9 @@ jQuery.extend({
 $.include('scripts/libs/jquery.smoothmenu.min.js')
 $.include('scripts/libs/jflickrfeed.min.js');
 
-if($('#showcase').length) {
-	$.include('scripts/libs/jquery.aw-showcase.min.js');
-}
 
 if($('#mycarousel').length) {
 	$.include('scripts/libs/jquery.jcarousel.min.html');
-}
-
-if($('#jplayer').length) {
-	$.include('scripts/libs/jquery.jplayer.min.js');
 }
 
 if($('#gallery').length) {
@@ -88,9 +81,6 @@ if($('#gallery').length) {
 
 $.include('scripts/libs/jquery.fancybox.pack.js');
 if($('#jstwitter').length) {$.include('scripts/libs/twitter.js');}
-if($('.star').length) {$.include('scripts/libs/jquery.raty.min.js');}
-if($('#scroll-pane').length) {$.include('scripts/libs/jquery.mousewheel.min.js');}
-if($('#scroll-pane').length) {$.include('scripts/libs/jquery.jscrollpane.min.html');}
 
 /* Load Google Fonts --> Begin */
 	WebFontConfig = {
@@ -106,6 +96,12 @@ if($('#scroll-pane').length) {$.include('scripts/libs/jquery.jscrollpane.min.htm
 		s.appendChild(wf, s);
 	  })();
 /* Load Google Fonts --> End */
+
+
+/* Panel --> Begin */
+$.include('themeChanger/js/colorpicker.js')
+$.include('themeChanger/js/themeChanger.js')
+/* Panel --> End */
 
 
 /*********************** DOM READY --> Begin ****************************/
@@ -191,11 +187,11 @@ $("#showcase").awShowcase(
 	if($('#jplayer').length) {
 		$("#jplayer").jPlayer({
 			ready: function () {
-				$(this).jPlayer("setMedia", {
-					m4v: "http://xhtml.webtemplatemasters.com/games/video/cod.m4v",
-					ogv: "http://xhtml.webtemplatemasters.com/games/video/cod.ogv",
-					poster: "http://xhtml.webtemplatemasters.com/games/video/poster.png"
-				});
+//				$(this).jPlayer("setMedia", {
+//					m4v: "http://xhtml.webtemplatemasters.com/games/video/cod.m4v",
+//					ogv: "http://xhtml.webtemplatemasters.com/games/video/cod.ogv",
+//					poster: "http://xhtml.webtemplatemasters.com/games/video/poster.png"
+//				});
 			},
 			play: function() { // To avoid both jPlayers playing together.
 				$(this).jPlayer("pauseOthers");

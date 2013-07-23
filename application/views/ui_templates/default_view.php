@@ -7,7 +7,7 @@
     </div>
     <!-- Put the thumbnail content in a div with the class .showcase-thumbnail -->
     <div class="showcase-thumbnail">
-        <img src="styles/main/images/slider/01.jpg" alt="01" />
+        <img src="styles/main/images/slider/thumbs/01.jpg" alt="01" />
         <span class="showcase-thumbnail-console">Xbox 360</span>
         <h6 class="showcase-thumbnail-title"><a href="#">Consectetur</a></h6>
     </div>
@@ -28,7 +28,7 @@
         <img src="styles/main/images/slider/02.jpg" width="730" height="460" alt="02" />
     </div>
     <div class="showcase-thumbnail">
-        <img src="styles/main/images/slider/02.jpg" alt="02" />
+        <img src="styles/main/images/slider/thumbs/02.jpg" alt="02" />
         <span class="showcase-thumbnail-console">PC, PS3</span>
         <h6 class="showcase-thumbnail-title"><a href="#">adipisicing consectetur elit</a></h6>
     </div>
@@ -46,10 +46,10 @@
 
 <div class="showcase-slide">
     <div class="showcase-entry">
-        <img src="/styles/main/images/slider/01.jpg" width="730" height="460" alt="03" />
+        <img src="styles/main/images/slider/03.jpg" width="730" height="460" alt="03" />
     </div>
     <div class="showcase-thumbnail">
-        <img src="styles/main/images/slider/03.jpg" alt="03"  />
+        <img src="styles/main/images/slider/thumbs/03.jpg" alt="03"  />
         <span class="showcase-thumbnail-console">Xbox 360, Wii</span>
         <h6 class="showcase-thumbnail-title"><a href="#">incididunt 2</a></h6>
     </div>
