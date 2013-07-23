@@ -175,10 +175,10 @@ $("#showcase").awShowcase(
 		speed_change:			true, /* Set to true to prevent users from swithing more then one slide at once. */
 		viewline:				false, /* If set to true content_width, thumbnails, transition and dynamic_height will be disabled. As for dynamic height you need to set the width and height of images in the source. */
 		custom_function:		function() {jQuery('.showcase-caption .star').raty('reload');}
-	});	
+	});
 }
 
-/* awShowcase --> End */	
+/* awShowcase --> End */
 
 
 /* Query data-rel to rel --> Begin */

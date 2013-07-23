@@ -12,6 +12,17 @@ angular.module('link',[],function($routeProvider, $locationProvider){
     });
 
     $routeProvider.when('/', {
+        controller:default_view,
         templateUrl:BASE_URL+'index.php/main/default_view'
     });
+
 });
+
+function default_view()
+{
+    $.include('scripts/general.js')
+
+}
+        /* awShowcase --> End */
+
+
