@@ -69,7 +69,7 @@
     </section><!--/ .entry-footer-->
 
     <div class="copyright">
-        Copyright © 2012. ThemeMakers. All rights reserved
+        Copyright © 2012. KrazyCoders. All rights reserved
     </div><!--/ .copyright-->
 
 
@@ -91,5 +91,9 @@
 <script type="text/javascript" src="<?php echo base_url('scripts/jquery-ui-1.8.16.custom.min.js'); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url('scripts/libs/jquery.mousewheel.min.js'); ?>" ></script>
 <script type="text/javascript" src="<?php echo base_url('scripts/general.js'); ?>"></script>
+<script>
+    var BASE_URL = "<?php echo base_url(); ?>";
+</script>
+<script src="<?php echo base_url('scripts/angular-views.js'); ?>"></script>
 </body>
 </html>
