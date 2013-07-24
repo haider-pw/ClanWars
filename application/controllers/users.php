@@ -24,9 +24,9 @@ class Users extends MY_Controller {
             'Password' => $pass
         );
         $result=$this->Common_Model->login($user_data);
-        if($result==true)
+        if($result[0]==true)
         {
-            $this->load->view('main');
+            $this->load->view('main',$result[1]);
         }
         else
         {

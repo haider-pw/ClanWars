@@ -43,7 +43,7 @@
         <ul id="user-account-nav">
 
             <?php if (LoggedIn()) { ?>
-                <li><a href="<?php echo base_url('index.php/users/logout'); ?>">Welcome User!</a></li>
+                <li>Welcome <?php echo $_POST['']?>!</a></li>
                 <li><a href="<?php echo base_url('index.php/users/logout'); ?>">Logout</a></li>
 
             <?php } else { ?>
