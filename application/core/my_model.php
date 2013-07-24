@@ -97,7 +97,7 @@ class MY_Model extends CI_Model {
                 'LoggedIn' => TRUE
             );
             $this->session->set_userdata($data);
-            return array(TRUE,$data['UserName']);
+            return TRUE;
         }
     }
     public function logout(){

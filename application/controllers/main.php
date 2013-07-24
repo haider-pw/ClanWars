@@ -11,7 +11,8 @@ parent::__construct();
 
     function index()
     {
-        $this->load->view('main');
+        $data['name']=$this->session->userdata('UserName');
+        $this->load->view('main',$data);
     }
 
     function default_view()
