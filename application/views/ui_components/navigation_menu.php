@@ -43,7 +43,7 @@
         <ul id="user-account-nav">
 
             <?php if (LoggedIn()) { ?>
-                <li>Welcome <?php echo $_POST['']?>!</a></li>
+                <li>Welcome <?php echo $name ?>!</a></li>
                 <li><a href="<?php echo base_url('index.php/users/logout'); ?>">Logout</a></li>
 
             <?php } else { ?>
@@ -56,6 +56,6 @@
 
         </ul><!--/ #user-account-nav-->
     </div><!--/ .account-wrapper-->
-
+;[
 </nav><!--/ #navigation-->
 <!-- ***************** - END Main Navigation - ******************* -->

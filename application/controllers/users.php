@@ -26,7 +26,8 @@ class Users extends MY_Controller {
         $result=$this->Common_Model->login($user_data);
         if($result[0]==true)
         {
-            $this->load->view('main',$result[1]);
+            $name=$result[1];
+            $this->load->view('main',$name);
         }
         else
         {
