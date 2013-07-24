@@ -80,7 +80,7 @@
 		margin-left:25px;
 	}
 	
-	input[type="text"], input[type="password"]{
+	form-bg form p input[type="text"], form-bg form p input[type="password"]{
 		box-shadow: 0px 0px 0px 4px #f2f5f7;
 		width: 290px;
 		height: 33px;
@@ -90,13 +90,13 @@
 		color: #aeaeae;
 		border: 1px solid #bec2c4;
 	}
-	
-	input[type="text"]:focus, input[type="password"]:focus{
+
+form-bg form p input[type="text"]:focus,form-bg form p input[type="password"]:focus{
 		box-shadow: 0px 0px 0px 4px #e0f1fc;
 		border:1px solid #7dc6dd;
 	}
-	
-	input[type="checkbox"] {
+
+form-bg form p input[type="checkbox"] {
 		vertical-align: middle;
 	}
 	
@@ -123,18 +123,7 @@
 		height:32px;
 		border:0px;
 	}	
-	
-	
-	label {
-		display: inline;
-		margin-left: 16px;
-		vertical-align: middle;
-	}
-	
-	label span {
-		color: 555555;
-		font-size: 12px;
-	}
+
 	
 	p.forgot {
 		text-align: center;
