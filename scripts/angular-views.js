@@ -11,6 +11,10 @@ angular.module('link',[],function($routeProvider, $locationProvider){
         templateUrl:BASE_URL+'index.php/main/validation_form'
     });
 
+    $routeProvider.when('/users', {
+        templateUrl:BASE_URL+'index.php/users/user_profile_view'
+    });
+
     $routeProvider.when('/', {
         controller:default_view,
         templateUrl:BASE_URL+'index.php/main/default_view'
