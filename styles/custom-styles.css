@@ -11,11 +11,6 @@
 .row-fluid:after {
     clear: both;
 }
-.row-fluid:before, .row-fluid:after {
-    content: "";
-    display: table;
-    line-height: 0;
-}
 .row-fluid {
     width: 100%;
 }
@@ -25,11 +20,15 @@
 .row-fluid [class*="span"]:first-child {
     margin-left: 0;
 }
-.row-fluid [class*="span"]:first-child {
-    margin-left: 0;
-}
+
 .row-fluid .span3 {
     width: 23.0769%;
+}
+.span3 {
+    width: 270px;
+}
+.row-fluid .span9 {
+    width: 74.359%;
 }
 .row-fluid [class*="span"] {
     -moz-box-sizing: border-box;
@@ -39,22 +38,8 @@
     min-height: 30px;
     width: 100%;
 }
-.row-fluid .span3 {
-    width: 23.4043%;
-}
-.row-fluid [class*="span"] {
-    -moz-box-sizing: border-box;
-    display: block;
-    float: left;
-    margin-left: 2.12766%;
-    min-height: 30px;
-    width: 100%;
-}
 .center {
     text-align: center !important;
-}
-.span3 {
-    width: 270px;
 }
 [class*="span"] {
     float: left;
@@ -75,9 +60,7 @@ a {
 a {
     text-decoration: none;
 }
-.row-fluid .span9 {
-    width: 74.359%;
-}
+
 .row-fluid [class*="span"] {
     -moz-box-sizing: border-box;
     display: block;
@@ -159,7 +142,4 @@ img {
 .glyphicons.single {
     color: #37A6CD;
     padding: 0 0 0 20px;
-}
-.row-fluid .span3 {
-    width: 23.0769%;
 }
