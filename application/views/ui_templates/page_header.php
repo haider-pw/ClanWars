@@ -9,6 +9,7 @@
     <title>Games Throne | Home Page</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="shortcut" href="<?php echo base_url('images/images/favicon.html');?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('styles/custom-styles.css'); ?>" />
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('styles/main/stylesheets/style.css'); ?>" />
     <!-- initialize jQuery Library -->
     <script type="text/javascript" src="<?php echo base_url('scripts/jQuery1.7.1.js'); ?>"></script>
