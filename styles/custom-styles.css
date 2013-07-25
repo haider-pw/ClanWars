@@ -1,7 +1,11 @@
-.row-fluid:before, .row-fluid:after {
-    content: "";
-    display: table;
-    line-height: 0;
+.row-fluid .span3 {
+    width: 23.0769% !important;
+}
+.span3 {
+    width: 270px;
+}
+.row-fluid .span9 {
+    width: 74.359% !important;
 }
 .row-fluid:before, .row-fluid:after {
     content: "";
@@ -21,15 +25,7 @@
     margin-left: 0;
 }
 
-.row-fluid .span3 {
-    width: 23.0769%;
-}
-.span3 {
-    width: 270px;
-}
-.row-fluid .span9 {
-    width: 74.359%;
-}
+
 .row-fluid [class*="span"] {
     -moz-box-sizing: border-box;
     display: block;
@@ -38,6 +34,7 @@
     min-height: 30px;
     width: 100%;
 }
+
 .center {
     text-align: center !important;
 }
@@ -61,14 +58,7 @@ a {
     text-decoration: none;
 }
 
-.row-fluid [class*="span"] {
-    -moz-box-sizing: border-box;
-    display: block;
-    float: left;
-    margin-left: 2.5641%;
-    min-height: 30px;
-    width: 100%;
-}
+
 .menubar {
     background: none repeat scroll 0 0 #F5F5F5;
     border-bottom: 1px solid #DDDDDD;
