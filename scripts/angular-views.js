@@ -35,21 +35,13 @@ myapp.config(function ($stateProvider, $routeProvider) {
 
             .state('users', {
                 url: "/users",
-                views: {
-                    "view": {
-                        templateUrl: BASE_URL + 'index.php/users/user_profile_view'
-                    }
-                }})
-
-
-            .state('profile_view', {
-                url: "/users/edit",
-                parent: "users",
-                views: {
-                    "@profile": {
-                        templateUrl: BASE_URL + 'index.php/users/profile_view'
-                    }
-                }})
+                abstract:"true",
+                templateUrl: BASE_URL + 'index.php/users/user_profile_view',
+            })
+            .state('users.list', {
+                url: '',
+                templateUrl: BASE_URL + 'index.php/users/profile_view'
+            })
     }
 );
 myapp.run(function($rootScope,   $state,   $stateParams){
