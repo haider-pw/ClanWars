@@ -115,7 +115,7 @@
 
 
 <!-- ************** - Featured Slider - ************** -->
-<div ng-view>
+    <div ui-view="view"></div>
 </div>
 <!-- ************** - END Entry - ************** -->
 <div>

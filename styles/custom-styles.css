@@ -133,3 +133,56 @@ img {
     color: #37A6CD;
     padding: 0 0 0 20px;
 }
+.site li
+{
+    display: inline;
+}
+
+.form label{
+    display: inline-block;
+    width:150px;
+    padding: 0px;
+    font-family: "Comic Sans";
+    color: #37A6CD;
+    font-size: 17px;
+
+}
+.form input,#site,.textarea
+{
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    border: 2px solid deepskyblue;
+
+}
+.heading h4
+{
+    display: inline;
+}
+
+.heading #button
+{
+    float: right;
+    font-size: 15px;
+    color: #808080;
+    background-color: lightcyan;
+    border: 2px solid #0596e9;
+    border-radius:7px;
+    padding: 3px;
+}
+
+.gender
+{
+    margin-right: 0;
+    display: inline;
+}
+
+.textarea
+{
+    margin-bottom: 15px;
+    padding-left: 115px;
+}
+#site
+{
+    margin-top: 5px;
+}

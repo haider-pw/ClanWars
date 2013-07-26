@@ -22,6 +22,7 @@
 
 <!--    loads angular library-->
        <script src="<?php echo base_url('scripts/angular.min.js');?>"></script>
+    <script src="<?php echo base_url('scripts/angular-ui-router.min.js');?>"></script>
 
 <!--    login page scripts-->
 

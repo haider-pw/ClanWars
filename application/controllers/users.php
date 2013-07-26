@@ -65,4 +65,8 @@ class Users extends MY_Controller {
     function user_profile_view(){
         $this->load->view('user_pages/profile');
     }
+
+    function profile_view(){
+        $this->load->view('user_pages/profile_view');
+    }
 }
