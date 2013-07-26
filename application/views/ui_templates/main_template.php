@@ -115,7 +115,11 @@
 
 
 <!-- ************** - Featured Slider - ************** -->
-    <div ui-view="view"></div>
+    <div ui-view ng-animate="{enter:'fade-enter'}"></div>
+    <pre>
+  $state = {{$state.current.name}}
+  $stateParams = {{$stateParams}}
+</pre>
 </div>
 <!-- ************** - END Entry - ************** -->
 <div>

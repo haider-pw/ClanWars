@@ -1,70 +1,66 @@
 var myapp = angular.module('link', ["ui.state"])
-myapp.config(function($stateProvider, $routeProvider){
-    $stateProvider
-        .state('index', {
-            url: "",
-            controller:default_view,
-            views: {
-                "view": {
-                    templateUrl:BASE_URL+'index.php/main/default_view'                }
-            }
-        })
+myapp.config(function ($stateProvider, $routeProvider) {
 
-        .state('login', {
-            url: "/login",
-            views: {
-                "view": {
-                    templateUrl:BASE_URL+'index.php/users/login'
+        $stateProvider
+            .state('index', {
+                url: "",
+                abstract:true,
+                templateUrl: BASE_URL + 'index.php/main/default_view',
+                controller: default_view
+            })
+
+            .state('login', {
+                url: "/login",
+                views: {
+                    "": {
+                        templateUrl: BASE_URL + 'index.php/users/login'              }
                 }
-            }
-        })
+            })
 
-        .state('register', {
-            url: "/register",
-            views: {
-                "view": {
-                    templateUrl:BASE_URL+'index.php/main/validation_form'                }
-            }
-        })
+            .state('register', {
+                url: "/register",
+                views: {
+                    "": {
+                        templateUrl: BASE_URL + 'index.php/main/validation_form'                }
+                }
+            })
 
-        .state('forums', {
-            url: "/forums",
-            views: {
-                "view": {
-                    templateUrl:BASE_URL+'index.php/main/default_form_view'                }
-            }
-        })
+            .state('forums', {
+                url: "/forums",
+                views: {
+                    "": {
+                        templateUrl: BASE_URL + 'index.php/main/default_form_view'                }
+                }
+            })
 
-        .state('users', {
-            url: "/users",
-            views: {
-                "view": {
-                    templateUrl:BASE_URL+'index.php/users/user_profile_view'
-            }
-        }})
+            .state('users', {
+                url: "/users",
+                views: {
+                    "view": {
+                        templateUrl: BASE_URL + 'index.php/users/user_profile_view'
+                    }
+                }})
 
 
-        .state('profile_view', {
-            url: "/users/edit",
-            views: {
-                "@profile": {
-                    templateUrl:BASE_URL+'index.php/users/profile_view'
-            }
-        }})
-}
+            .state('profile_view', {
+                url: "/users/edit",
+                parent: "users",
+                views: {
+                    "@profile": {
+                        templateUrl: BASE_URL + 'index.php/users/profile_view'
+                    }
+                }})
+    }
 );
+myapp.run(function($rootScope,   $state,   $stateParams){
+    $rootScope.$state = $state;
+    $rootScope.$stateParams = $stateParams;
+});
 
-function default_view()
-{
+function default_view() {
     $.include('scripts/js_library.js')
 
 }
-
-
-
-
-
-
 
 
 //angular.module('link',[],function($routeProvider, $locationProvider){
