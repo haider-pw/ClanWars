@@ -42,6 +42,70 @@ myapp.config(function ($stateProvider, $routeProvider) {
                 url: '',
                 templateUrl: BASE_URL + 'index.php/users/profile_view'
             })
+            .state('users.details', {
+                // parent: 'contacts',
+                url: '/{userId}',
+//                resolve: {
+//                    something:
+//                        [        '$timeout', '$stateParams',
+//                            function ($timeout,   $stateParams) {
+//                                return $timeout(function () { return "Asynchronously resolved data (" + $stateParams.contactId + ")" }, 10);
+//                            }],
+//                },
+                views: {
+                    '': {
+                        templateUrl: BASE_URL + 'index.php/users/profile_view'
+//                        controller:
+//                            [        '$scope', '$stateParams', 'something',
+//                                function ($scope,   $stateParams,   something) {
+//                                    $scope.something = something;
+//                                    $scope.contact = findById($scope.users, $stateParams.userId);
+//                                }]
+                    },
+                    'menu': {
+                        templateProvider:
+                            [ '$stateParams',
+                                function ($stateParams){
+                                    // This is just to demonstrate that $stateParams injection works for templateProvider
+                                    // $stateParams are the parameters for the new state we're transitioning to, even
+                                    // though the global '$stateParams' has not been updated yet.
+                                    return '<hr><small class="muted">Contact ID: ' + $stateParams.contactId + '</small>';
+                                }]
+                    }
+                }
+            })
+            .state('users.edit', {
+                // parent: 'contacts',
+                url: '/{userId}/edit',
+//                resolve: {
+//                    something:
+//                        [        '$timeout', '$stateParams',
+//                            function ($timeout,   $stateParams) {
+//                                return $timeout(function () { return "Asynchronously resolved data (" + $stateParams.contactId + ")" }, 10);
+//                            }],
+//                },
+                views: {
+                    '': {
+                        templateUrl: BASE_URL + 'index.php/users/profile_edit'
+//                        controller:
+//                            [        '$scope', '$stateParams', 'something',
+//                                function ($scope,   $stateParams,   something) {
+//                                    $scope.something = something;
+//                                    $scope.contact = findById($scope.users, $stateParams.userId);
+//                                }]
+                    },
+                    'menu': {
+                        templateProvider:
+                            [ '$stateParams',
+                                function ($stateParams){
+                                    // This is just to demonstrate that $stateParams injection works for templateProvider
+                                    // $stateParams are the parameters for the new state we're transitioning to, even
+                                    // though the global '$stateParams' has not been updated yet.
+                                    return '<hr><small class="muted">Contact ID: ' + $stateParams.contactId + '</small>';
+                                }],
+                    },
+                },
+            })
     }
 );
 myapp.run(function($rootScope,   $state,   $stateParams){

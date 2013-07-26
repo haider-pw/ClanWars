@@ -34,6 +34,6 @@
             <!-- Twitter Section END -->
 
         </div>
-        <div ui-view="profile_view"></div>
+        <div ui-view></div>
 </section><!--/ .entry-->
 <!-- ************** - END Entry - ************** -->

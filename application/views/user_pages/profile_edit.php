@@ -17,7 +17,7 @@
 
     <form class="form">
 
-        <label for="Name">User Name:</label><b>pakistanihaider</b><br>
+        <label for="Name">User Name:</label><input type="text" id="Name"><br>
         <label for="GameName">Game Name:</label><input type="text" id="GameName"><br>
         <label for="Cnic">Cnic:</label><input type="text" id="cnic"><br>
         <label for="Email">Email:</label><input type="text" id="Email"><br>
