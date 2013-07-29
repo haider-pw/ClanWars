@@ -119,6 +119,7 @@
     <pre>
   $state = {{$state.current.name}}
   $stateParams = {{$stateParams}}
+  $userId = {{$stateParams.userId}}
 </pre>
 </div>
 <!-- ************** - END Entry - ************** -->

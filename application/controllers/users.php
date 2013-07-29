@@ -76,8 +76,8 @@ class Users extends MY_Controller {
     public function profile_edit($id)
     {
         $sendid=$id;
-        $data5=$this->datamodel->edit($sendid);
-        $json['userdata']=json_encode($data5);
-        $this->load->view('profile_edit',$json);
+        $data5=$this->Common_Model->edit($sendid);
+        $json=json_encode($data5);
+        print_r($json);
     }
 }

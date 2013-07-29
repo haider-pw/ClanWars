@@ -14,7 +14,7 @@
     <h3>About</h3>
     <textarea class="textarea"></textarea>
     <!-- // About END -->
-
+<h1>{{userdata}}</h1>
     <form class="form">
 
         <label for="Name">User Name:</label><input type="text" id="Name"><br>
