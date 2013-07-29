@@ -65,11 +65,19 @@ class Users extends MY_Controller {
     function user_profile_view(){
         $this->load->view('user_pages/profile');
     }
-    function profile_edit(){
+    function profile_edit_view(){
         $this->load->view('user_pages/profile_edit');
     }
 
     function profile_view(){
         $this->load->view('user_pages/profile_view');
+    }
+
+    public function profile_edit($id)
+    {
+        $sendid=$id;
+        $data5=$this->datamodel->edit($sendid);
+        $json['userdata']=json_encode($data5);
+        $this->load->view('profile_edit',$json);
     }
 }

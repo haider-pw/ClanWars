@@ -37,17 +37,17 @@ class MY_Model extends CI_Model {
         return $result;
     }
 
-    function insert($table,$data) {
-        $this->db->insert($table,$data);
-        $InsertedID=$this->db->insert_id();
-        $affected_rows=$this->db->affected_rows();
-        if($affected_rows>0){
-            return $InsertedID;
-        }
-        else {
-            return 0;
-        }
-    }
+//    function insert($table,$data) {
+//        $this->db->insert($table,$data);
+//        $InsertedID=$this->db->insert_id();
+//        $affected_rows=$this->db->affected_rows();
+//        if($affected_rows>0){
+//            return $InsertedID;
+//        }
+//        else {
+//            return 0;
+//        }
+//    }
 
     function update($table,$where=array(),$data) {
         $this->db->update($table,$data,$where);
@@ -108,5 +108,11 @@ class MY_Model extends CI_Model {
     }
     public function hash($string){
         return hash('sha512', $string.config_item('encryption_key'));
+    }
+    function edit ($id)
+    {
+        $this->db->select()->from('cw_user')->where('UserID',$id);
+        $query=$this->db->get();
+        return $query->result_array();
     }
 }
