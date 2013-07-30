@@ -11,8 +11,11 @@ parent::__construct();
 
     function index()
     {
-        $data['name']=$this->session->userdata('UserName');
+        $id= $this->session->userdata('UserID');
+        $name= $this->session->userdata('UserName');
+        $data['data']=array('id'=>$id,'name'=>$name);
         $this->load->view('main',$data);
+
     }
 
     function default_view()

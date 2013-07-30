@@ -43,7 +43,8 @@
         <ul id="user-account-nav">
 
             <?php if (LoggedIn()) { ?>
-                <li style="margin-top: 14px;color: white;font-size: 15px;"><a href="<?php echo site_url('#/users'); ?>">Welcome <?php echo $name ?>!</a></li>
+<!--                $id=--><?php //echo base_url('index.php/users/session_userid');?>
+                <li style="margin-top: 14px;color: white;font-size: 15px;"><a href="<?php echo site_url('#/users/'.$data['id']); ?>">Welcome <?php echo $data['name'] ?>!</a></li>
                 <li><a href="<?php echo base_url('index.php/users/logout'); ?>">Logout</a></li>
 
             <?php } else { ?>

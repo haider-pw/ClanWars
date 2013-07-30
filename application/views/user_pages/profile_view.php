@@ -3,7 +3,7 @@
     <!-- About -->
     <div class="heading">
         <h4>Mr.Awesome</h4>
-        <a id="button" href="">Done</a><br>
+        <a id="button" href="<?php echo site_url('#/users/'.$id. '/edit'); ?>">Edit</a><br>
     </div>
     <div class="menubar links primary">
         <ul class="site">
@@ -15,17 +15,14 @@
     <textarea class="textarea"></textarea>
     <!-- // About END -->
 
-    <form class="form">
+    <form class="form" ng-repeat="user in userdata">
 
-        <label for="Name">User Name:</label><b>pakistanihaider</b><br>
-        <label for="GameName">Game Name:</label><input type="text" id="GameName"><br>
-        <label for="Cnic">Cnic:</label><input type="text" id="cnic"><br>
-        <label for="Email">Email:</label><input type="text" id="Email"><br>
-        <label for="Password">User Name:</label><input type="text" id="Password"><br>
-        <label for="Age">Age:</label><input type="text" id="Age"><br>
-        <label for="Gender">Gender:</label>
-        <label class="gender" for="male">Male:</label><input style="margin-left: -100px;"   type="radio" id="male" name="gen">
-        <label class="gender" for="female">Female:</label><input style="margin-left: -85px;" type="radio" id="female" name="gen">
+        <label for="Name">User Name:</label><h5>{{user.UserName}}</h5><br>
+        <label for="GameName">Game Name:</label><h5>{{user.InGameName}}</h5><br>
+        <label for="Cnic">Cnic:</label><h5>{{user.Cnic}}</h5><br>
+        <label for="Email">Email:</label><h5>{{user.Email}}</h5><br>
+        <label for="Age">Age:</label><h5>{{user.Age}}</h5><br>
+        <label for="Gender">Gender:</label><h5>{{user.Gender}}</h5><br>
 
     </form>
 </div>

@@ -70,7 +70,13 @@ class Users extends MY_Controller {
     }
 
     function profile_view(){
-        $this->load->view('user_pages/profile_view');
+        $data['id']= $this->session->userdata('UserID');
+        $this->load->view('user_pages/profile_view',$data);
+    }
+
+    function session_userid()
+    {
+     echo $this->Common_Model->userid();
     }
 
     public function profile_edit($id)
@@ -79,5 +85,30 @@ class Users extends MY_Controller {
         $data5=$this->Common_Model->edit($sendid);
         $json=json_encode($data5);
         print_r($json);
+    }
+
+    function update_profile()
+    {
+        $user=$this->input->post('UserName');
+        $game_name=$this->input->post('game_name');
+        $cnic=$this->input->post('cnic');
+        $age=$this->input->post('age');
+        $email=$this->input->post('email');
+        $password=$this->input->post('password');
+        $gender=$this->input->post('gender');
+        $pass=$this->Common_Model->hash($password);
+        $table="cw_user";
+        $user_data = array
+        (
+            'UserName' => $user,
+            'InGameName' => $game_name,
+            'Cnic' => $cnic,
+            'age' => $age,
+            'email' => $email,
+            'gender' => $gender,
+            'Password' => $pass
+        );
+        print_r($user_data);
+        exit;
     }
 }

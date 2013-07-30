@@ -106,6 +106,12 @@ class MY_Model extends CI_Model {
     public function loggedin(){
         return (bool) $this->session->userdata('LoggedIn');
     }
+
+//    public function userid(){
+//        return $this->session->userdata('UserID');
+//
+//    }
+
     public function hash($string){
         return hash('sha512', $string.config_item('encryption_key'));
     }
