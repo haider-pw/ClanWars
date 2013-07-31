@@ -20,14 +20,14 @@ var styleSwitcher = {
 
         // Style Switcher CSS
         yepnope([
-            {load: 'assets/css/style-switcher.css'},
-            {load: 'assets/css/colorpicker.css'},
-            {load: 'assets/js/cssbeautify.js'},
-            {load: 'assets/js/bootstrap-colorpicker.js',
+            {load: 'admin/css/style-switcher.css'},
+            {load: 'admin/css/colorpicker.css'},
+            {load: 'scripts/admin/cssbeautify.js'},
+            {load: 'scripts/admin/bootstrap-colorpicker.js',
                 complete: function() {
                     yepnope([
                         {load: 'less!assets/less/theme.less'},
-                        {load: 'assets/js/vendor/less-1.3.3.min.js',
+                        {load: 'scripts/admin/vendor/less-1.3.3.min.js',
                             complete: function() {
 
 

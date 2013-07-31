@@ -121,7 +121,7 @@
     <!-- .user-media -->
     <div class="media user-media hidden-phone">
         <a href="" class="user-link">
-            <img src="assets/img/user.gif" alt="" class="media-object img-polaroid user-img">
+            <img src="<?php echo base_url('styles/admin/img/user.gif" alt="" class="media-object img-polaroid user-img');?>">
             <span class="label user-label">16</span>
         </a>
 
