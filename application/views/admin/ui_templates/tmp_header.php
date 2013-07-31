@@ -8,7 +8,7 @@
     <title>Dashboard</title>
     <meta name="description" content="Metis: Bootstrap Responsive Admin Theme">
     <meta name="viewport" content="width=device-width">
-    <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('styles/admin/css/bootstrap.min.css');?>">
     <link type="text/css" rel="stylesheet" href="assets/css/bootstrap-responsive.min.css">
     <link type="text/css" rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="assets/css/style.css">
