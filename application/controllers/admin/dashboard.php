@@ -12,6 +12,6 @@ class Dashboard extends Backend_Controller{
         parent:: __construct();
     }
     function index(){
-        echo "This is suppose to be Admin Page..";
+        $this->load->view('admin/main');
     }
 }

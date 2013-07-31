@@ -90,7 +90,7 @@ class Users extends Frontend_Controller {
     function update_profile()
     {
         $get=file_get_contents('php://input');
-        $json_get=json_decode($get);
+       $json_get=json_decode($get);
         $table="cw_user";
         foreach($json_get[0] as $key=>$value){
 
@@ -98,7 +98,7 @@ class Users extends Frontend_Controller {
 
         }
         print_r($data);
-        $id=$data['UserID'];
+        $id=array('UserID'=>$data['UserID']);
         $this->Common_Model->update($table,$id,$data);
 
 
