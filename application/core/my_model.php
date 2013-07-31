@@ -37,17 +37,6 @@ class MY_Model extends CI_Model {
         return $result;
     }
 
-//    function insert($table,$data) {
-//        $this->db->insert($table,$data);
-//        $InsertedID=$this->db->insert_id();
-//        $affected_rows=$this->db->affected_rows();
-//        if($affected_rows>0){
-//            return $InsertedID;
-//        }
-//        else {
-//            return 0;
-//        }
-//    }
 
     function update($table,$where=array(),$data) {
         $this->db->update($table,$data,$where);

@@ -91,27 +91,16 @@ class Users extends MY_Controller {
     {
         $get=file_get_contents('php://input');
         $json_get=json_decode($get);
-        var_dump($json_get);
-        $user=$this->input->post('UserName');
-        $game_name=$this->input->post('game_name');
-        $cnic=$this->input->post('cnic');
-        $age=$this->input->post('age');
-        $email=$this->input->post('email');
-        $password=$this->input->post('password');
-        $gender=$this->input->post('gender');
-        $pass=$this->Common_Model->hash($password);
         $table="cw_user";
-        $user_data = array
-        (
-            'UserName' => $user,
-            'InGameName' => $game_name,
-            'Cnic' => $cnic,
-            'age' => $age,
-            'email' => $email,
-            'gender' => $gender,
-            'Password' => $pass
-        );
-        print_r($user_data);
-        exit;
+        foreach($json_get as $key=>$value){
+
+            $data[$key]=($value);
+
+        }
+        print_r($data);
+        $id=$data['UserID'];
+        $this->Common_Model->update($table,$id,$data);
+
+
     }
 }
