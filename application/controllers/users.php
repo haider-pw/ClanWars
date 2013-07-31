@@ -89,6 +89,9 @@ class Users extends MY_Controller {
 
     function update_profile()
     {
+        $get=file_get_contents('php://input');
+        $json_get=json_decode($get);
+        var_dump($json_get);
         $user=$this->input->post('UserName');
         $game_name=$this->input->post('game_name');
         $cnic=$this->input->post('cnic');
