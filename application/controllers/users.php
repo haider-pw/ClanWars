@@ -92,7 +92,7 @@ class Users extends MY_Controller {
         $get=file_get_contents('php://input');
         $json_get=json_decode($get);
         $table="cw_user";
-        foreach($json_get as $key=>$value){
+        foreach($json_get[0] as $key=>$value){
 
             $data[$key]=($value);
 

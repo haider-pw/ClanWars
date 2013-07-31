@@ -23,8 +23,8 @@
         <label for="Password">User Name:</label><input type="text" id="Password" ng-model="user."><br>
         <label for="Age">Age:</label><input type="text" id="Age" ng-model="user.Age"><br>
         <label for="Gender">Gender:</label>
-        <label class="gender" for="male">Male:</label><input style="margin-left: -100px;"   type="radio" id="male" name="gen" ng-model="user.Gander" >
-        <label class="gender" for="female">Female:</label><input style="margin-left: -85px;" type="radio" id="female" name="gen" ng-model="user.Gender" value="Female">
+<!--        <label class="gender" for="male">Male:</label><input style="margin-left: -100px;"   type="radio" id="male" name="gen" ng-model="user.Gander" >-->
+<!--        <label class="gender" for="female">Female:</label><input style="margin-left: -85px;" type="radio" id="female" name="gen" ng-model="user.Gender" value="Female">-->
 
     </form>
 </div>
