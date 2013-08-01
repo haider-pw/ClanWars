@@ -17,11 +17,11 @@
     ?>
     <!-- BEGIN MAIN NAVIGATION -->
     <ul id="menu" class="unstyled accordion collapse in">
-        <?php foreach($MenuName as $key => $row){
+        <?php foreach($menus as $key => $row){
 ?>
         <li class="accordion-group active">
             <a data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#dashboard-nav">
-                <i class="icon-dashboard icon-large"></i> Dashboard <span
+                <i class="icon-dashboard icon-large"></i><?php echo $row['Title'] ?> <span
                     class="label label-inverse pull-right">2</span>
             </a>
             <?php if($ParentID['ParentID']!=NULL || $ParentID['ParentID']!=''){ ?>
