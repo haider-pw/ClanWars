@@ -20,13 +20,13 @@ var styleSwitcher = {
 
         // Style Switcher CSS
         yepnope([
-            {load: 'admin/css/style-switcher.css'},
-            {load: 'admin/css/colorpicker.css'},
+            {load: 'styles/admin/css/style-switcher.css'},
+            {load: 'styles/admin/css/colorpicker.css'},
             {load: 'scripts/admin/cssbeautify.js'},
             {load: 'scripts/admin/bootstrap-colorpicker.js',
                 complete: function() {
                     yepnope([
-                        {load: 'less!assets/less/theme.less'},
+                        {load: 'less!styles/admin/less/theme.less'},
                         {load: 'scripts/admin/vendor/less-1.3.3.min.js',
                             complete: function() {
 
@@ -66,7 +66,7 @@ var styleSwitcher = {
             }
             if (localStorage.pattern) {
                 $('body').css({
-                    'background': 'url(assets/img/pattern/' + localStorage.pattern + '.png) repeat'
+                    'background': 'url(styles/admin/img/pattern/' + localStorage.pattern + '.png) repeat'
                 });
             }
         }
@@ -280,7 +280,7 @@ var styleSwitcher = {
                     .append(
                     $('<a/>')
                     .css({
-                'background': 'url(assets/img/pattern/' + patternImages[i].image + '.png) repeat'
+                'background': 'url(styles/admin/img/pattern/' + patternImages[i].image + '.png) repeat'
             })
                     .attr({
                 'href': '#',
@@ -294,7 +294,7 @@ var styleSwitcher = {
         patternList.find('a').on('click', function(e) {
             e.preventDefault();
             $('body').css({
-                'background-image': 'url(assets/img/pattern/' + $(this).data('patternImage') + '.png)',
+                'background-image': 'url(styles/admincolorpicker.css"/img/pattern/' + $(this).data('patternImage') + '.png)',
                 'background-repeat': ' repeat'
             });
             $this.patternImage = $(this).data('patternImage');

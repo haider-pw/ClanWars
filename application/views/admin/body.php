@@ -15,7 +15,6 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <a class="brand" href="index.html">Metis</a>
                 <!-- .topnav -->
                 <div class="btn-toolbar topnav">
                     <div class="btn-group">

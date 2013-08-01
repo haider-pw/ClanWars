@@ -124,7 +124,7 @@ body.padTop44 {
 #left {
   display: block;
   float: left;
-  position: relative;
+  position: absolute;
   width: 220px;
 }
 #left .user-media {
