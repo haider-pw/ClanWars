@@ -25,3 +25,29 @@
 
     <script src="<?php echo base_url('scripts/admin/vendor/modernizr-2.6.2-respond-1.1.0.min.js');?>"></script>
 </head>
+
+<body>
+<!-- BEGIN WRAP -->
+<div id="wrap">
+    <!-- BEGIN TOP BAR -->
+    <div id="top">
+        <?php $this->load->view('admin/ui_components/top_navigation_bar'); ?>
+    </div>
+    <!-- END TOP BAR -->
+
+    <!-- BEGIN HEADER.head -->
+    <header class="head">
+        <div class="search-bar">
+         <?php $this->load->view('admin/ui_components/search_bar'); ?>
+        </div>
+        <!-- ."main-bar -->
+        <div class="main-bar">
+            <?php $this->load->view('admin/ui_components/main_bar'); ?>
+        </div>
+        <!-- /.main-bar -->
+    </header>
+    <!-- END HEADER.head -->
+
+    <!-- BEGIN LEFT  -->
+    <?php $this->load->view('admin/ui_components/left_menu_cpanel'); ?>
+    <!-- END LEFT -->
