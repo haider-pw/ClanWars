@@ -1,8 +1,21 @@
 <div id="left">
 <?php $this->load->view('admin/ui_components/user-media'); ?>
 
-    <?php print_r($menus);
-    exit();
+    <?php
+    foreach ($menus as $key => $row){
+        $MenuName = $row['Name'];
+        $MenuIcon = $row['Icon'];
+        $MenuUrl = $row['Url'];
+        $ParentID = $row['ParentID'];
+        $MenuTitle = $row['Title'];
+        $MenuOrder = $row['MenuOrder'];
+        $CreatedBy = $row['CreatedBy'];
+        $CreatedDate = $row['CreatedDate'];
+        $UpdatedBy = $row['UpdatedBy'];
+        $UpdatedDate = $row['UpdatedDate'];
+    }
+    print_r($MenuName);
+
     ?>
     <!-- BEGIN MAIN NAVIGATION -->
     <ul id="menu" class="unstyled accordion collapse in">
