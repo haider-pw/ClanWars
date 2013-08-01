@@ -15,6 +15,7 @@
         $UpdatedDate = $row['UpdatedDate'];
     }
     print_r($MenuName);
+    exit();
 
     ?>
     <!-- BEGIN MAIN NAVIGATION -->
