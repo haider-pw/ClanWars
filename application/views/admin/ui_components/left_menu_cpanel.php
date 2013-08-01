@@ -1,7 +1,9 @@
 <div id="left">
 <?php $this->load->view('admin/ui_components/user-media'); ?>
 
-    <?php print_r($data); ?>
+    <?php print_r($menus);
+    exit();
+    ?>
     <!-- BEGIN MAIN NAVIGATION -->
     <ul id="menu" class="unstyled accordion collapse in">
         <li class="accordion-group active">

@@ -13,7 +13,7 @@ class Dashboard extends Backend_Controller{
     }
     function index(){
         $table='cw_menu';
-        $data=$this->Common_Model->get($table);
+        $data['menus']=$this->Common_Model->get($table);
         $this->load->view('admin/main',$data);
     }
 }
