@@ -3,37 +3,35 @@
 
     <?php
     foreach ($menus as $key => $row){
-        $MenuName['Name'] = $row['Name'];
-        $MenuIcon['Icon'] = $row['Icon'];
-        $MenuUrl['Url'] = $row['Url'];
-        $ParentID['ParentID'] = $row['ParentID'];
-        $MenuTitle['Title'] = $row['Title'];
-        $MenuOrder['MenuOrder'] = $row['MenuOrder'];
-        $CreatedBy['CreatedBy'] = $row['CreatedBy'];
-        $CreatedDate['CreatedDate'] = $row['CreatedDate'];
-        $UpdatedBy['UpdatedBy'] = $row['UpdatedBy'];
-        $UpdatedDate['UpdatedDate'] = $row['UpdatedDate'];
-    }
-    ?>
+        if($row['ParentID'] == 0){
+            $Menu[$row['MenuOrder']]['Name'] = $row['Name'];
+            foreach($menus as $subrow){
+                if($subrow['ParentID'] == $row['MenuID']){
+                    $Menu[$row['MenuOrder']]['SubMenu'][$subrow['MenuOrder']]['SubName'] = $subrow['Name'];
+                }
+            }
+        }
+
+    }?>
     <!-- BEGIN MAIN NAVIGATION -->
     <ul id="menu" class="unstyled accordion collapse in">
-        <?php foreach($menus as $key => $row){
-?>
-        <li class="accordion-group active">
-            <a data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#dashboard-nav">
-                <i class="icon-dashboard icon-large"></i><?php echo $row['Title'] ?> <span
-                    class="label label-inverse pull-right">2</span>
-            </a>
-            <?php if($ParentID['ParentID']!=NULL || $ParentID['ParentID']!=''){ ?>
-                <ul class="collapse in" id="dashboard-nav">
-               <?php
-               foreach($MenuName as $key =>$row){?>
-                   <li><a href="index.html"><i class="icon-angle-right"></i> Default Style</a></li>
-               <?php }?>
-               </ul>
-           <?php }
-}
-?>
+        <?php ksort($Menu);?>
+        <?php foreach($Menu as $MainMenu){?>
+            <li class="accordion-group active">
+                <a data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#dashboard-nav">
+                    <i class="icon-dashboard icon-large"></i><?php echo $MainMenu['Name'] ?><span
+                        class="label label-inverse pull-right">2</span>
+                </a>
+                <?php if(isset($MainMenu['SubMenu'])){?>
+                    <ul class="collapse in" id="dashboard-nav">
+                        <?php foreach($MainMenu['SubMenu'] as $SubMenu) { ?>
+                            <li><a href="index.html"><i class="icon-angle-right"></i><?php echo $SubMenu['SubName']?></a></li>
+                        <?php } ?>
+                    </ul>
+                <?php } ?>
+            </li>
+        <?php } ?>
+
 <!--        <li class="accordion-group active">-->
 <!--            <a data-parent="#menu" data-toggle="collapse" class="accordion-toggle" data-target="#dashboard-nav">-->
 <!--                <i class="icon-dashboard icon-large"></i> Dashboard <span-->
