@@ -41,6 +41,9 @@
 $route['default_controller'] = "main";
 $route['404_override'] = '';
 $route['admin'] = 'admin/dashboard';
+//if controller other then default..
+$route['admin/(:any)'] = 'admin/$1';
+
 
 
 /* End of file routes.php */
