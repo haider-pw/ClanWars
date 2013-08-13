@@ -1,8 +1,15 @@
 <div class="nav-collapse collapse">
 <ul class="nav">
-    <li class="active"><a href="<?php echo base_url('admin/dashboard');?>">Dashboard</a></li>
-    <li><a href="<?php echo base_url('admin/dashboard');?>">Users</a></li>
-    <li><a href="file.html">File Manager</a></li>
+    <?php
+    $i=0;
+    foreach($tabs as $tab);
+    $i++;{?>
+    <?php print_r($tabs[0]) ?>
+    <li class="active"><a href="<?php echo base_url('admin/dashboard');?>"><?php echo $tab ?></a></li>
+    <?php $i=$i++;
+    } ?>
+<!--    <li><a href="--><?php //echo base_url('admin/dashboard');?><!--">Users</a></li>-->
+<!--    <li><a href="file.html">File Manager</a></li>-->
     <li class="dropdown">
         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
             Form Elements <b class="caret"></b>

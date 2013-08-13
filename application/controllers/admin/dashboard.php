@@ -14,6 +14,8 @@ class Dashboard extends Backend_Controller{
     function index(){
         $table='cw_menu';
         $data['menus']=$this->Common_Model->get($table);
-        $this->load->view('admin/main',$data);
+        $table='cw_tabs';
+        $tabs_data['tabs']=$this->Common_Model->get($table);
+        $this->load->view('admin/main',$tabs_data);
     }
 }
