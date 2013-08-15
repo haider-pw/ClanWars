@@ -5,7 +5,7 @@
     foreach($tabs as $tab)
     { ?>
 
-    <li class="active"><a href="<?php echo base_url('admin/dashboard');?>"><?php echo $tab['Description'] ?></a></li>
+    <li class="active"><a href="<?php echo base_url('admin/dashboard');?>"><?php echo $tab->Description; //$tab['Description'] ?></a></li>
     <?php }?>
 <!--    <li><a href="--><?php //echo base_url('admin/dashboard');?><!--">Users</a></li>-->
 <!--    <li><a href="file.html">File Manager</a></li>-->

@@ -14,6 +14,7 @@ class Dashboard extends Backend_Controller{
     function index(){
         $PTable='cw_tabs';
         $columns=array('cw_tabs.Name','Description');
+        $group_by='Description';
         $joins = array(
             array(
                 'table'    => 'cw_menu',
@@ -25,7 +26,7 @@ class Dashboard extends Backend_Controller{
         $data['menus']=$this->Common_Model->get($table);
         //Getting Data for Tabs, should show all the Tabs which have any menus
         $table='cw_tabs';
-        $data['tabs']=$this->Common_Model->joined_get_by($columns,$PTable,$joins,$where='');
+        $data['tabs']=$this->Common_Model->joined_get_by($columns,$PTable,$joins,$where='',$group_by);
         //$all_data['all']=array($data,$tabs_data);
         $this->load->view('admin/main',$data);
     }

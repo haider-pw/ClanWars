@@ -5,7 +5,7 @@ class Common_Model extends MY_Model {
         parent::__construct();
     }
 
-    function joined_get_by($data, $PTable, $joins,$where='')
+    function joined_get_by($data, $PTable, $joins,$where='',$group_by='')
     {
         $this->db->select($data);
 
@@ -16,6 +16,9 @@ class Common_Model extends MY_Model {
         if($where!='')
         {
             $this->db->where($where);
+        }
+        if($group_by!=''){
+            $this->db->group_by($group_by);
         }
 
         $query = $this->db->get();
