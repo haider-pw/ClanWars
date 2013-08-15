@@ -12,11 +12,21 @@ class Dashboard extends Backend_Controller{
         parent:: __construct();
     }
     function index(){
+        $PTable='cw_tabs';
+        $columns=array('cw_tabs.Name','Description');
+        $joins = array(
+            array(
+                'table'    => 'cw_menu',
+                'condition' => 'cw_tabs.ID = cw_menu.TabID',
+                'jointype'  => 'INNER'
+            )
+        );
         $table='cw_menu';
         $data['menus']=$this->Common_Model->get($table);
+        //Getting Data for Tabs, should show all the Tabs which have any menus
         $table='cw_tabs';
-        $tabs_data['tabs']=$this->Common_Model->get($table);
-        $all_data['all']=array($data,$tabs_data);
-        $this->load->view('admin/main',$all_data);
+        $data['tabs']=$this->Common_Model->joined_get_by($columns,$PTable,$joins,$where='');
+        //$all_data['all']=array($data,$tabs_data);
+        $this->load->view('admin/main',$data);
     }
 }
