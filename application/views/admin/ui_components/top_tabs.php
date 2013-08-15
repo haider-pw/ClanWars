@@ -1,13 +1,12 @@
 <div class="nav-collapse collapse">
 <ul class="nav">
     <?php
-    $i=0;
-    foreach($tabs as $tab);
-    $i++;{?>
-    <?php print_r($tabs[0]) ?>
-    <li class="active"><a href="<?php echo base_url('admin/dashboard');?>"><?php echo $tab ?></a></li>
-    <?php $i=$i++;
-    } ?>
+   print_r($all);
+    foreach($all[1]['tabs'] as $tab)
+        print_r($tab);
+    {?>
+    <li class="active"><a href="<?php echo base_url('admin/dashboard');?>"><?php echo $tab['Name'] ?></a></li>
+    <?php }?>
 <!--    <li><a href="--><?php //echo base_url('admin/dashboard');?><!--">Users</a></li>-->
 <!--    <li><a href="file.html">File Manager</a></li>-->
     <li class="dropdown">
