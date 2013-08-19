@@ -10,8 +10,10 @@
 class Dashboard extends Backend_Controller{
     public function __construct(){
         parent:: __construct();
+        $this->load->model('tab_model');
     }
     function index(){
+        //$this->load->model('tab_model');
         $PTable='cw_tabs';
         $columns=array('cw_tabs.Name','Description');
         $group_by='Description';

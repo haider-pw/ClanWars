@@ -21,39 +21,24 @@ function LoggedIn(){
         return FALSE;
     }
 }
-if (!function_exists('checkuserrole'))
-{
-    function CheckUserRole($session_loggedIn)
+
+
+    function CheckUserRole($UserID)
     {
-        $loggedIn = $session_loggedIn;
-        if($loggedIn > 0)
+        if($UserID > 0)
         {
-            $groupsids='';
-            $arr = explode("-",$loggedIn);
-            $id = $arr[1];
             $ci =& get_instance();
-            $ci->load->model('common/common_model');
-            $data = $ci->common_model->get_records('sys_user_groups_memberships','GroupID','UserID',$id);
-            foreach($data->result() as $vari)
-            {
-                $groupsids[] = $vari->GroupID;
-            }
-            //var_dump($groupsids);
-//            if($groupsids!=NULL){
-//                echo "it is not NULL";
-//            }
-//            exit();
-            $roles = $ci->common_model->get_where_in('sys_user_groups_roles','GroupID,RoleID',$groupsids,'GroupID');
-            foreach($roles->result_array() as $varible)
-            {
-
-                $rolesids[] = $varible['GroupID'];
-                $rolesids[] = $varible['RoleID'];
-            }
-
-            return $rolesids;
-
+            $ci->load->model('Common_Model');
+            $where=array(
+                'UserID' => $UserID
+            );
+            $UserGroupID = $ci->Common_Model->get_by('GroupID','cw_user',$where,TRUE);
+            $where=array(
+                'GroupID' => $UserGroupID->GroupID
+            );
+            $userRoles = $ci->Common_Model->get_by('RoleID','cw_roles_in_group',$where,False);
+            return $userRoles;
         }
 
-    }
+
 }

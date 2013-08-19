@@ -24,5 +24,18 @@ class Common_Model extends MY_Model {
         $query = $this->db->get();
         return $query->result();
     }
+    public function check_allow($arr){
+        $count=0;
+        foreach($arr as $key=> $value){
+            $actual_array[$count++] = $value->RoleID;
+        }
+        $this->db->select('*');
+        $this->db->from('cw_menus-in-roles');
+        $this->db->where_in('RoleID',$actual_array);
+        $query=$this->db->get();
+//        print_r($query->result());
+//        exit;
+        return $query->result();
+    }// end of authenticate function
 
 }
