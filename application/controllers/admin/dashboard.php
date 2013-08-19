@@ -10,10 +10,13 @@
 class Dashboard extends Backend_Controller{
     public function __construct(){
         parent:: __construct();
-        $this->load->model('tab_model');
+        $this->load->model('Tab_Model');
     }
     function index(){
         //$this->load->model('tab_model');
+        $arr = CheckUserRole(136);
+        $tabs['allowed_menus'] = $this->Tab_Model->check_allow($arr);
+        $tabs['info'] = $this->tab_model->get_tabs();
         $PTable='cw_tabs';
         $columns=array('cw_tabs.Name','Description');
         $group_by='Description';

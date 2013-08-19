@@ -1,8 +1,7 @@
 <?php
 
-$arr = CheckUserRole(136);
-//print_r($arr);
-$menus = $this->Tab_Model->check_allow($arr);
+
+
 
 ?>
 <div class="nav-collapse collapse">
