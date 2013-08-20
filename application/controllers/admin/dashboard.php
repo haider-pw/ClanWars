@@ -15,8 +15,8 @@ class Dashboard extends Backend_Controller{
     function index(){
         //$this->load->model('tab_model');
         $arr = CheckUserRole(136);
-        $tabs['allowed_menus'] = $this->Tab_Model->check_allow($arr);
-        $tabs['info'] = $this->tab_model->get_tabs();
+        $data['allowed_menus'] = $this->Tab_Model->check_allow($arr);
+        $data['tabs'] = $this->Tab_Model->get_tabs();
         $PTable='cw_tabs';
         $columns=array('cw_tabs.Name','Description');
         $group_by='Description';

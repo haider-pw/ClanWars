@@ -1,17 +1,24 @@
 <?php
+echo"<pre>";
+print_r($allowed_menus);
+echo"<pre>";
+$count  = 0;
 
-
-
-
+foreach($allowed_menus as $key=>$value){
+    $user_tabs[$value->TabOrder]['TabName'] = $value->TabName;
+    $user_tabs[$value->TabOrder]['TabDesc'] = $value->TabName;
+}
 ?>
 <div class="nav-collapse collapse">
     <ul class="nav">
     <?php
     $i=0;
-    foreach($tabs as $tab)
+    $tab_arr = json_encode($user_tabs);
+    foreach($user_tabs as $tab)
     { ?>
-    <li class="active"><a href="<?php echo base_url("admin/dashboard?tab='$i'"); ?>" onclick="javascript:view(tab_arr,this.id,'<?php echo $tab_desc[$count] ?>')"><?php echo $tab->Description; //$tab['Description'] ?></a></li>
-    <?php }?>
+    <li class="active"><a href="<?php echo base_url("admin/dashboard?tab='$i'"); ?>" onclick="javascript:view(<?php echo $tab_arr; ?>,this.id,'<?php echo $user_tabs[$value->TabOrder]['TabName']; ?>')"><?php echo $tab; ?></a></li>
+    <?php }
+    ?>
 <!--    <li><a href="--><?php //echo base_url('admin/dashboard');?><!--">Users</a></li>-->
 <!--    <li><a href="file.html">File Manager</a></li>-->
     <li class="dropdown">

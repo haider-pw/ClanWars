@@ -20,8 +20,8 @@ class Tab_Model extends MY_Model{
             $actual_array[$count++] = $value->RoleID;
         }
         $this->db->select('*');
-        $this->db->from('cw_menus-in-roles');
-        $this->db->where_in('RoleID',$actual_array);
+        $this->db->from('cw_group_roles_form_view');
+        $this->db->where_in('FormRoleID',$actual_array);
         $query=$this->db->get();
 //        print_r($query->result());
 //        exit;
